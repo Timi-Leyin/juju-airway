@@ -1,0 +1,184 @@
+#why_us{
+    position: relative;
+    margin: 4rem 0;
+
+    .head{
+text-align: center;
+padding: 0 10%;
+margin: 5rem 0 3rem 0;
+.title{
+    font-size: 3.5rem;
+    padding: 6px 0;
+}
+    }
+
+    .why-grid{
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-gap: 30px;
+        grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    // @include flex(space-around);
+
+    > div{
+        margin: 30px;;
+    }
+    .image{
+        height: 500px;
+        // transform: scale(0.7);
+        // width: 400px;
+        background-color: #eee;
+        @extend %background_reset;
+        background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.4)),
+         url('/img/1.jpg');
+         box-shadow:  2px 1px 16px;
+    }
+    }
+
+    .why{
+display: grid;
+line-height: 2;
+width: 900px;
+margin:3rem auto;
+max-width:100%;
+// justify-content: center;
+grid-gap: 30px;
+align-items: center;
+grid-template-columns: repeat(auto-fit ,minmax(200,1fr));
+    
+.why__card{
+    text-align: left;
+    min-width:200px;
+    max-width: 80%;
+    margin: 10px auto;
+
+    .icon{
+        @include flex(center);
+        $size:78px;
+        height: $size;
+        display: none;
+        visibility: hidden;
+        width:$size;
+        margin: 2rem auto;
+        border-radius: $size;
+        font-size: 4rem;
+        align-items: center;
+        background-color: $white;
+        box-shadow:  0 0 10px $primary;
+        @include transition;
+    }
+    p{
+        font-size: 15px;
+    }
+}
+}
+
+
+.why_2{
+    position: relative;
+    display: grid;
+    width: 930px;
+margin:6rem auto;
+max-width:100%;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+
+.card{
+    height: 300px;
+    margin: 10px;
+    background-color: #eee;
+    background-size:cover;
+    user-select: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+@include flex(center);
+@include transition;
+box-shadow:  3px -2px 10px rgba(0, 0, 0, 0.308);
+
+
+
+.btn{
+    @extend %btn;
+    padding: 10px ;
+    border: none;
+    font-weight: bold;
+    font-family: inherit;
+    color: $black;
+    background-color: $white;
+    // display: none;
+    @include transition;
+    display: none;
+    transform: translateY(200%);
+
+    &:hover{
+        background-color: $primary;
+        color:$white;
+        box-shadow:  1px 2px 15px $dim-black;
+    }
+
+}
+
+
+&:hover{
+    box-shadow:  3px -2px 18px rgba(0, 0, 0, 0.459);
+}
+
+
+
+
+.cont{
+    align-self: flex-end;
+    margin: 30px;
+    text-align: center;
+
+    h2{
+        font-weight: 500;
+            font-size: 27px;
+            margin: 10px 0;
+    }
+}
+
+
+&.diff{
+    background-image: linear-gradient($primary-dim,$primary-dim),
+    url('/img/overlay-bg.jpg');
+    color: $white;
+    @include flex(space-between);
+    align-items: center;
+    // width: 100%;
+    text-align: left;
+    justify-items: left;
+    flex-direction: column;
+
+    > div{
+        align-self: flex-start;
+        margin: 30px;
+        h2{
+            margin: 10px 0;
+            font-weight: 500;
+            font-size: 27px
+        }
+    }
+
+    .btn{
+        @extend %btn;
+        padding: 10px ;
+        border: none;
+        font-weight: bold;
+        font-family: inherit;
+        color: $black;
+        background-color: $white;
+
+        &:hover{
+            background-color: $primary;
+            color:$white;
+            box-shadow:  1px 2px 15px $dim-black;
+        }
+    }
+}
+}
+}
+   
+}

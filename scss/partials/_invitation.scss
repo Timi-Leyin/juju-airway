@@ -1,0 +1,75 @@
+#invitation{
+
+background:$fall-back-color;
+padding: 50px;
+@include flex(space-between);
+// flex-wrap: wrap;
+place-items: center;
+align-items: center;
+
+> div{
+    margin:30px auto
+}
+
+.head{
+    h2{
+        font-size: $font-big - 1rem;
+    }
+    p{
+        font-size: $font-tiny;
+    }
+   width:400px;
+}
+
+.video{
+position: relative;
+height: 350px;
+box-shadow:  2px 4px 16px;
+// overflow: hidden;
+margin: 10px auto;
+width: 500px;
+
+
+.video-thumbnail{
+    background:$fall-back-color;
+    @include position(absolute,0,0,0,0);
+    height: 100%;
+    width:100%;
+    background-image: url('/img/john-mcarthur-X_MOr6oa4-k-unsplash.jpg');
+    // @extend %background_reset;
+    background-size: cover;
+    background-position: center center;
+}
+
+.play_btn{
+    @include position(absolute,50%,-40px,0,0);
+    z-index:1;
+    @extend %round_btn;
+    @include flex(center);
+    align-items: center;
+    color:$white;
+    $size:80px;
+    height: $size;
+    width:$size;
+    font-size: $size/4;
+    transform: translateY(-50%) scale(1);
+    padding: 0 3px !important;
+    background-color: $primary;
+    
+
+    &:hover{
+    transform: translateY(-50%) scale(0.9);
+    }
+}
+
+video{
+    background:$fall-back-color;
+    @include position(absolute,0,0,0,0);
+    height: 100%;
+    width:100%;
+    // display: none;
+}
+
+}
+
+}

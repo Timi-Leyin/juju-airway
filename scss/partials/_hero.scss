@@ -1,0 +1,156 @@
+.hero{
+    // min-height: 100vh;
+    position: relative;
+    // background-image: url('/img/jacky-lo-LjX-m_UXQGM-unsplash.jpg');
+//     $url:'/img/john-mcarthur-X_MOr6oa4-k-unsplash.jpg';
+background-color: #000;
+  $url:'/img/2.jpg';
+    color:$white;
+    @include transition(background);
+    @extend %background_reset !optional;
+    @include background_image(
+        (rgba(2, 2, 2, 0.9),
+        rgba(0, 0, 0, 0.9)),
+        $url);
+    
+
+
+
+
+
+
+    .hero__content{
+position: inherit;
+        display: none;
+        visibility: hidden;
+        opacity: 0;
+        padding: 100px;
+        align-items: center;
+        flex-wrap:wrap;
+        min-height: 100vh;
+        // max-height: 100%;
+        @include transition(transform);
+        
+        &.active{
+            @include flex(space-between);
+              transition:0.1s;
+            visibility:visible;
+animation: fade 1s forwards;
+            opacity: 1;
+        }
+@keyframes fade {
+    0%{
+        opacity:0;
+        transform: scale(0.98);
+    }
+    100%{
+        opacity:1;
+        transform: scale(1);
+    }
+}
+
+
+        .hero__content_right{
+            position: relative;
+            &>.head{
+width: 600px;
+max-width: 100%;
+font-size:$font-big;
+            }
+            &>.info{
+                min-width: 100%;
+                max-width: 300px;
+              
+                font-size: $font-tiny;
+                opacity: .5;
+                @include transition(opacity);
+            }
+
+            &>.buttons{
+                margin: 20px 0px;
+
+                >.btn{
+                    @extend %btn;
+                font-family: inherit;
+                    margin: 5px 10px;
+                    @extend %btn-bordered;
+    
+                    &.btn.active{
+                            @extend %btn-inverse;
+                        
+                    }
+                }
+            }
+
+
+
+        }
+
+     
+.hero__content_left{
+    margin:10px ;
+    > h2{
+        padding: 10px 0;
+        // font-size:$font-big - 2rem 
+    }
+
+    form{
+        display: flex;
+        flex-wrap: wrap;
+        input[type=search]{
+            font-family:inherit;
+            width: 100%;
+            font-size: 17px;
+            padding:15px 10px;
+            box-shadow: 2px 1px 100px;
+        }
+
+    button{
+        @extend %btn;
+        margin:10px 0 0 0 ;
+        // width: 90%;
+        padding: 10px;
+        font-size: 24px;
+    
+        background-color: $primary !important;
+    }
+    }
+}
+
+    }
+
+
+    .slides-controls-btn{
+        position: absolute;
+        bottom:10px;  
+        margin-bottom: 20px;                                                                    
+        .control{
+            position: relative;
+            font-size: $font-tiny;
+            padding: 0 10px;
+            user-select: none;
+            cursor: pointer;
+            font-weight: bold;
+            &.active{
+                color: $primary;
+                @include transition(color);
+                &::after{
+                    content: '';
+                    position: absolute;
+                    top: -25px;
+                    width: 2px;
+                    left: 50%;
+                    @include transition(height);
+                    height: 0px;
+                    @include  SliderControlAnimation(25px) ;
+                    animation:SlideheightActive 4.9s linear forwards;
+                    background-color: $primary;
+                }
+            }
+        }
+    }
+
+
+}
+
+

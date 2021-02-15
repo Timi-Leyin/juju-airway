@@ -1,0 +1,97 @@
+
+
+.header-nav{
+   @include position(absolute,0,0);
+   width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    padding: 10px 0;
+    @include flex(space-around);
+    align-items: center;
+    color:$white;
+    z-index:10;
+    // background-color: $dim-black;
+
+
+
+    .header__left{
+       margin:0 10px;
+
+       .logo{
+           text-align: center;
+           p{
+               font-size: 12px;
+               font-weight:bolder;
+               color:$white;
+            //    -webkit-background-image:-webkit-linear-gradient($primary,#fff,#999);
+            //    background-image:-webkit-linear-gradient(45deg, $primary,$secondary);
+            //    -webkit-background-clip: text;
+            //    background-clip: text;
+            //    -webkit-text-fill-color: transparent
+           }
+       }
+    }
+
+
+.header__middle{
+    .nav-links{
+        @include grid;
+        grid-template-columns: repeat(5,auto);
+
+        li{
+            padding: 20px;
+            cursor: pointer;
+            @include transition;
+
+            &:hover{
+                transform: translateY(-10px)
+                                }
+
+            a{
+                font-size: 14px;
+                color: inherit;
+
+            &.active{
+                    color:$primary;
+                    @include transition;
+                }
+            }
+        }
+    }
+}
+
+
+.header__right{
+    @include flex(space-between);
+    align-items: center;
+    margin-top: 40px;
+    flex-direction: column;
+
+    >div{
+        margin: 5px 10px;
+        @extend %round_btn;
+        background-color: $primary;
+        color: #fff;
+    }
+
+    .hamburger{
+        display: flex;
+        visibility: hidden;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        place-items: center;
+        cursor:pointer;
+&>.bar{
+    height:3.4px;
+    box-shadow:  0 0 10px;
+    width:25px;
+    border-radius: 100px;
+    margin: 2px;
+    background: $black;
+}
+    }
+}
+
+}

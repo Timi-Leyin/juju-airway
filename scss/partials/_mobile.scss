@@ -1,0 +1,207 @@
+@media screen and (max-width:700px){
+
+#root-main-container.active{
+    transform:scale(0.8);
+}
+
+
+    .header-nav{
+        @include position(sticky,0,0) ;
+         background:$white;
+         color:$black;
+         z-index:10;
+        //  padding: 10px 0;
+        //  height: 90px;
+         box-shadow:  0 0 10px rgba(0,0,0,0.2);
+         .header__left .logo p{
+         color:$black;
+     }
+     .header__middle{
+         .nav-links{
+             @include position (fixed,0,0);
+             height: 100vh;
+             text-align: center;
+             align-items: unset;
+             width:100%;
+             
+             $dim-black:rgba(0, 0, 0, 0.863);
+             background: $dim-black;
+             @include bg_blur(10px); 
+             transform:scale(0.8);
+             display: flex;
+             flex-direction: column;
+             visibility: hidden;
+             justify-content: center;
+             text-align: left;
+             opacity: 0;
+             @include transition(transform);
+            //  display: none;
+             grid-template-columns: repeat(1,auto);
+     
+             &.active{
+                transform:scale(1);
+                visibility: visible;
+                opacity: 1;
+             }
+
+
+             li{
+                //  padding: 0px;
+                width: 50%;
+                @include transition(opacity);
+               border-bottom:2px solid $dim-white;
+     
+                 &:hover{
+                     
+                     opacity: .6;
+                           transform: translateY(0);
+                }  
+                a{
+                    color:$white;
+                }
+                
+                                     }
+         }
+     }
+     
+     
+     .header__right{
+         @include flex(space-between);
+         align-items: center;
+         margin-top: 0px;
+         flex-direction: column;
+     
+         >div{
+             margin: 0px;
+             display: none;
+             background-color: transparent;
+         }
+     
+         .hamburger{
+             visibility: visible;
+             position: absolute;
+             top: 20px;
+             z-index:99;
+
+             &.change > .bar:nth-child(1){
+                //  opacity: .7;
+                 transform: rotate(-45deg) translate(-6px , 9px);
+             }
+             &.change > .bar:nth-child(2){
+                visibility: hidden;
+                opacity: 0;
+             }
+             &.change > .bar:nth-child(3){
+                 transform: rotate(45deg) translate(-2px , -5px);
+             }
+             &> .bar{
+                 @include transition;
+             }
+
+             &.change{
+position: fixed;
+             }
+
+             &.change > .bar{
+                 background-color: $white;
+             }
+         }
+     }
+     
+     }
+
+
+
+     .hero{
+      
+ 
+    
+        .hero__content{
+  
+            padding: 60px 30px !important;
+            align-items: center;
+            flex-wrap:wrap;
+    
+    
+         
+        }
+    
+    
+
+        
+    
+    .hero__content_right {
+        position: relative;
+        padding:6% !important;
+        width: 100%;
+        margin: 0 -10px;
+
+        > .head{
+            font-size:calc(3rem + 100%) !important
+        }
+      
+    }
+  
+    
+
+
+    
+    }
+    
+    #invitation{
+      
+    
+        .video{
+            $size:90vw;
+            width: $size;
+            height:300px;
+            
+    
+        }
+        
+    }
+    
+
+    footer{
+        justify-content: unset;
+        text-align: center;
+      max-width: 100%;
+      min-width: 100%;
+
+      
+    >.footer__lists{
+        margin: auto;
+    }
+
+    }
+
+
+    // end
+}
+
+
+@media screen and (max-width:980px){
+    #invitation{
+    flex-direction: column;
+
+    .head{
+        width:90%;
+text-align: center;
+// padding: 0 20px;
+        h2{
+            font-size: $font-big - 1.5rem;
+        }
+    
+    }
+
+    .video{
+        width: 90%;
+
+    }
+    
+        }
+
+        
+}
+
+

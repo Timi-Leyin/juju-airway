@@ -1,0 +1,35 @@
+#about{
+    position: relative;
+    margin: $font-big;
+
+    .card-lists{
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3,1fr);
+
+        .--list{
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-between;
+            flex-direction:column;
+            align-items: right;
+            height: 400px;
+            width: 350px;
+            box-shadow: 0 0 10px $dim-black;
+h3{
+    background:$primary;
+    text-align: center;
+    padding: 15px 0;
+    color:$white;
+    font-size: 2.6rem;
+    font-weight: bolder;
+}
+            img{
+                height: 100%;
+                object-fit: cover;
+                flex: 1;
+            }
+        }
+    }
+}

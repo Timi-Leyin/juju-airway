@@ -1,0 +1,236 @@
+#book {
+    position: relative;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+&:before{
+content:'Booking';
+font-size: calc(10rem - 100%);
+font-weight: bolder;
+padding: 0 10px;
+text-shadow: 0 0 30px $white;
+}
+    &:after{
+     content:'';
+     width:60%;
+ 
+     box-shadow: 0 0 105px;
+     padding: 50px 0;
+     background-color: $secondary;
+     min-height:500px;
+     position: absolute;
+     z-index:-1;
+    }
+
+    .head {
+     margin: 30px 0;
+     text-align: center;
+        h2 {
+            font-size: $font-big - 1.8rem;
+        }
+        p {
+            font-size: $font-tiny;
+            padding:3px 10px;
+        }
+    }
+
+    .book {
+        padding:50px 20px;
+        margin: 10px 30px;
+        border-radius: 10px;
+        background: $fall-back-color;
+        width: 800px;
+        max-width: 90%;
+
+       form {
+            width: 100%;
+            .title {
+                // margin: 20px 0;
+                text-align: center;
+                font-size: 20px;
+            }
+
+            .trip_type {
+                @include flex(center);
+                align-items: center;
+            }
+            .flying-info {
+                display: grid;
+                grid-gap: 8px;
+                grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+            }
+            .radio-container {
+                position: relative;
+                display: block;
+                user-select: none;
+                justify-content: center;
+                height: 25px;
+                width: 130px;
+                margin:0 0 20px 0;
+                display: flex;
+                align-items: center;
+
+                p {
+                    margin-bottom: 9px;
+                    font-size: 13px;
+                    text-transform: capitalize;
+                }
+
+                input {
+                    position: absolute;
+                    top: 2px;
+                    left: 2px;
+                    z-index: 9;
+                    opacity: 0;
+                    cursor: pointer;
+
+                
+                    //    width: 0;
+                    //    height: 0;
+                }
+
+                .checkmark {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    margin-right: 40px;
+                    width: 15px;
+                    display: block;
+                    height: 15px;
+                    border-radius: 20px;
+                    cursor: pointer;
+                    background-color: $white;
+                    box-shadow: inset 0 0 0 2px $white;
+                }
+                &:hover input:checked ~ .checkmark {
+                    background-color: $primary;
+                }
+
+                &:hover input ~ .checkmark {
+                    background-color: $fall-back-color
+                }
+
+                input[type="radio"]:checked ~ .checkmark {
+                    background-color: $primary;
+                }
+            }
+
+            .input_detail {
+                // padding: 10px 10px;
+
+                .flex {
+                    @include flex(space-around);
+                    // width: 70px;
+                    padding: 12px;
+                    place-items: center;
+                  
+                    margin: 1px 0;
+                    height: 40px;
+                    background-color: $white;
+                    align-items: center;
+                }
+
+                .fa {
+                    padding: 6px 10px;
+                    margin-left: -10px;
+                }
+                input {
+                    width: 190px;
+                // float: right;
+                }
+                .custom-select {
+                    position: relative;
+                    color: inherit;
+                    user-select: none;
+                    width: 190px;
+                    
+                    
+
+                    select {
+                        display: none;
+                    }
+                    .select-selected {
+                     
+                        // background-color: $primary;
+
+                        &:after {
+                            position: absolute;
+                            content: "";
+                            top: 14px;
+                            right: 10px;
+                            width: 0;
+                            height: 0;
+                            @include transition;
+                            border: 6px solid transparent;
+                            border-color: $black transparent transparent
+                                transparent;
+                        }
+
+                        &.select-arrow-active:after {
+                            border-color: transparent transparent $black
+                                transparent;
+                            top: 7px;
+                        }
+                    }
+                    .select-items div,
+                    .select-selected {
+                        color: $black;
+                        padding: 9px 10px;
+                        // width: 150px;
+                        border: 1px solid transparent;
+                        // border-color: transparent transparent $dim-black
+                        //     transparent;
+                     
+                        cursor: pointer;
+                    }
+
+                    .select-items {
+                        position: absolute;
+                        background-color: $secondary;
+                        top: 100%;
+                       
+                        left: 0;
+                        // width: 100%;
+                        box-shadow: 0 0 10px;
+
+                        right: 0;
+                        z-index: 10;
+
+                        div{
+                         color: $white ;
+                         font-weight: 400;
+                        }
+                    }
+                    .select-hide {
+                        display: none;
+                    }
+                    .select-items div:hover,
+                    .same-as-selected {
+                        background-color: $dim-black;
+                        // color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    button[type=submit]{
+     @extend %btn;
+     margin:20px 0;
+     background: $primary;
+     font-family:inherit;
+     width:100%;
+
+     &:hover{
+      background-color: $primary;
+      color:$white !important;
+      transform:scale(0.9)
+     }
+
+     &:focus{
+      color:$primary;
+     }
+    }
+}

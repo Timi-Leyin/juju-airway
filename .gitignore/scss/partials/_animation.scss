@@ -1,0 +1,162 @@
+@mixin SliderControlAnimation($height){
+@keyframes SlideheightActive {
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: $height;
+    }
+}
+}
+
+/*Globals*/
+
+.scroller {
+    transition: 0.3s 0.3s;
+    opacity: 0;
+}
+
+.scroller.active{
+    opacity: 1 !important;
+}
+
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px)
+}
+
+.fade-up.active {
+    animation-name: fade-up;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fade-up {
+    0% {}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+
+
+/**********************/
+
+.zoom-in {
+    opacity: 0;
+    transform: scale(0.5)
+}
+
+.zoom-in.active {
+    animation-name: zoom-in;
+    animation-duration: 0.4s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes zoom-in {
+    0% {}
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+/*************/
+/**********************/
+
+.fade-down {
+    opacity: 0;
+    transform: translateY(-40px)
+}
+
+.fade-down.active {
+    animation-name: fade-down;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fade-down {
+    0% {}
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+/*************/
+
+
+
+/**********************/
+
+.write-l {
+    opacity: 0;
+    width: 0;
+    overflow: hidden;
+    animation-direction: 2s;
+    animation-timing-function: ease
+}
+
+.write-l.active {
+    animation-name: write-l;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes write-l {
+    0% {}
+
+
+    100% {
+        opacity: 1;
+        width: 200px;
+    }
+
+
+}
+
+/*****************/
+
+
+/**********************/
+
+.fade-in {
+    opacity: 0;
+
+}
+
+.fade-in.active {
+    animation-name: fade-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.2s;
+}
+
+@keyframes fade-in {
+    0% {}
+
+
+    100% {
+        opacity: 1;
+    }
+
+
+}
+
+/*****************/
+
+
+

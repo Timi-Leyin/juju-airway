@@ -1,0 +1,93 @@
+.footer-credits{
+    background: $black;
+width: 100%;
+display: block;
+font-family: inherit;
+font-size: $font-tiny;
+padding: 10px ;
+color:$white
+}
+
+footer{
+    position: relative;
+    margin: 3rem 0  auto;
+    padding:3rem;
+
+    min-width:600px;
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background: $black;
+    color:$white;
+    grid-gap: 10px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+
+
+.link{
+text-decoration: underline;
+}
+
+    .head{
+font-size: 27px;
+    }
+
+
+    li:not(:first-child){
+        padding: 6px 0;
+        color:rgba(255, 255, 255, 0.76)
+    }
+
+    a{
+        color:inherit;
+        font-size:$font-tiny;
+  
+    }
+
+    >.footer__lists{
+        margin: 10px;
+        min-width:200px
+    }
+
+
+    form{
+        width: inherit;
+        margin: auto;
+        input{
+            width:70%;
+            padding: 15px;
+        }
+
+        button{
+            @extend %btn;
+            margin: 10px 0;
+            font-family: inherit;
+            font-size: 17px;
+            width:50%;
+
+            &:hover{
+                background-color: $primary;
+                transform: scale(0.9);
+            }
+        }
+
+      
+    }
+
+    .connect{
+        margin:  10px 0;
+      
+        .fa,.fab{
+            padding: 10px;
+            display: inline-block;
+            font-size: 20px;
+            @include transition(color);
+
+            &:hover{
+                color:$primary
+            }
+        }
+    }
+
+}
+

@@ -1,12 +1,12 @@
 #why_us{
     position: relative;
     margin: 4rem 0;
-
+    
     .head{
-text-align: center;
-padding: 0 10%;
-margin: 5rem 0 3rem 0;
-.title{
+        text-align: center;
+        padding: 0 10%;
+        margin: 5rem 0 3rem 0;
+        .title{
     font-size: 3.5rem;
     padding: 6px 0;
 }
@@ -18,13 +18,14 @@ margin: 5rem 0 3rem 0;
         justify-content: center;
         grid-gap: 30px;
         grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+        margin: 4rem 0;
     // @include flex(space-around);
 
     > div{
         margin: 30px;;
     }
     .image{
-        height: 500px;
+        height: 400px;
         // transform: scale(0.7);
         // width: 400px;
         background-color: #eee;

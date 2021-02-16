@@ -6,10 +6,10 @@
     flex-wrap: wrap;
 
 &:before{
-content:'Booking';
-font-size: calc(10rem - 100%);
+content:'Book Tickets';
+font-size: calc(11rem - 100%);
 font-weight: bolder;
-padding: 0 10px;
+padding: 0 20px;
 text-shadow: 0 0 30px $white;
 }
     &:after{
@@ -42,7 +42,8 @@ text-shadow: 0 0 30px $white;
         border-radius: 10px;
         background: $fall-back-color;
         width: 800px;
-        max-width: 90%;
+        max-width: 98%;
+        margin:auto;
 
        form {
             width: 100%;

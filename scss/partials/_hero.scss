@@ -25,6 +25,7 @@ position: inherit;
         visibility: hidden;
         opacity: 0;
         padding: 100px;
+        text-align: center;
         align-items: center;
         flex-wrap:wrap;
         min-height: 100vh;
@@ -32,7 +33,7 @@ position: inherit;
         @include transition(transform);
         
         &.active{
-            @include flex(space-between);
+            @include flex(center);
               transition:0.1s;
             visibility:visible;
 animation: fade 1s forwards;
@@ -100,19 +101,24 @@ font-size:$font-big;
         input[type=search]{
             font-family:inherit;
             width: 100%;
-            font-size: 17px;
-            padding:15px 10px;
+            font-size: 16px;
+            padding: 15px;
             box-shadow: 2px 1px 100px;
         }
-
-    button{
-        @extend %btn;
-        margin:10px 0 0 0 ;
-        // width: 90%;
-        padding: 10px;
+        
+        button{
+            @extend %btn;
+            margin:10px auto ;
+            height: 100%;
+        width: 90%;
+        padding:10px;
+        
         font-size: 24px;
     
         background-color: $primary !important;
+    &:hover{
+        transform: scale(0.9);
+    }
     }
     }
 }

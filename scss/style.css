@@ -122,95 +122,34 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
 
 /*Globals*/
 .scroller {
-  transition: 0.3s 0.3s;
+  transition: 1s ease;
   opacity: 0;
 }
 
-.scroller.active {
+[data-scroll].active {
   opacity: 1 !important;
 }
 
+/********************/
 .fade-up {
   opacity: 0;
   transform: translateY(40px);
 }
 
 .fade-up.active {
-  animation-name: fade-up;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
+  transform: translateY(0);
 }
 
-@keyframes fade-up {
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
-/**********************/
-.zoom-in {
-  opacity: 0;
-  transform: scale(0.5);
-}
-
-.zoom-in.active {
-  animation-name: zoom-in;
-  animation-duration: 0.4s;
-  animation-timing-function: ease-out;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-}
-
-@keyframes zoom-in {
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-/*************/
 /**********************/
 .fade-down {
-  opacity: 0;
   transform: translateY(-40px);
 }
 
 .fade-down.active {
-  animation-name: fade-down;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
+  transform: translateY(0);
 }
 
-@keyframes fade-down {
-  100% {
-    opacity: 1;
-    transform: translateY(0px);
-  }
-}
 /*************/
-/**********************/
-.write-l {
-  opacity: 0;
-  width: 0;
-  overflow: hidden;
-  animation-direction: 2s;
-  animation-timing-function: ease;
-}
-
-.write-l.active {
-  animation-name: write-l;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
-}
-
-@keyframes write-l {
-  100% {
-    opacity: 1;
-    width: 200px;
-  }
-}
 /*****************/
 /**********************/
 .fade-in {
@@ -218,18 +157,8018 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
 }
 
 .fade-in.active {
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-fill-mode: forwards;
-  animation-delay: 0.2s;
+  opacity: 1;
 }
 
-@keyframes fade-in {
-  100% {
-    opacity: 1;
-  }
+.zoom-in {
+  transform: scale(0.5);
 }
+
+.zoom-in.active {
+  transform: scale(1);
+}
+
 /*****************/
+[scroll-delay="1"] {
+  transition-delay: 1ms;
+}
+
+[scroll-duration="1"] {
+  transition-duration: 1ms;
+}
+
+[scroll-delay="2"] {
+  transition-delay: 2ms;
+}
+
+[scroll-duration="2"] {
+  transition-duration: 2ms;
+}
+
+[scroll-delay="3"] {
+  transition-delay: 3ms;
+}
+
+[scroll-duration="3"] {
+  transition-duration: 3ms;
+}
+
+[scroll-delay="4"] {
+  transition-delay: 4ms;
+}
+
+[scroll-duration="4"] {
+  transition-duration: 4ms;
+}
+
+[scroll-delay="5"] {
+  transition-delay: 5ms;
+}
+
+[scroll-duration="5"] {
+  transition-duration: 5ms;
+}
+
+[scroll-delay="6"] {
+  transition-delay: 6ms;
+}
+
+[scroll-duration="6"] {
+  transition-duration: 6ms;
+}
+
+[scroll-delay="7"] {
+  transition-delay: 7ms;
+}
+
+[scroll-duration="7"] {
+  transition-duration: 7ms;
+}
+
+[scroll-delay="8"] {
+  transition-delay: 8ms;
+}
+
+[scroll-duration="8"] {
+  transition-duration: 8ms;
+}
+
+[scroll-delay="9"] {
+  transition-delay: 9ms;
+}
+
+[scroll-duration="9"] {
+  transition-duration: 9ms;
+}
+
+[scroll-delay="10"] {
+  transition-delay: 10ms;
+}
+
+[scroll-duration="10"] {
+  transition-duration: 10ms;
+}
+
+[scroll-delay="11"] {
+  transition-delay: 11ms;
+}
+
+[scroll-duration="11"] {
+  transition-duration: 11ms;
+}
+
+[scroll-delay="12"] {
+  transition-delay: 12ms;
+}
+
+[scroll-duration="12"] {
+  transition-duration: 12ms;
+}
+
+[scroll-delay="13"] {
+  transition-delay: 13ms;
+}
+
+[scroll-duration="13"] {
+  transition-duration: 13ms;
+}
+
+[scroll-delay="14"] {
+  transition-delay: 14ms;
+}
+
+[scroll-duration="14"] {
+  transition-duration: 14ms;
+}
+
+[scroll-delay="15"] {
+  transition-delay: 15ms;
+}
+
+[scroll-duration="15"] {
+  transition-duration: 15ms;
+}
+
+[scroll-delay="16"] {
+  transition-delay: 16ms;
+}
+
+[scroll-duration="16"] {
+  transition-duration: 16ms;
+}
+
+[scroll-delay="17"] {
+  transition-delay: 17ms;
+}
+
+[scroll-duration="17"] {
+  transition-duration: 17ms;
+}
+
+[scroll-delay="18"] {
+  transition-delay: 18ms;
+}
+
+[scroll-duration="18"] {
+  transition-duration: 18ms;
+}
+
+[scroll-delay="19"] {
+  transition-delay: 19ms;
+}
+
+[scroll-duration="19"] {
+  transition-duration: 19ms;
+}
+
+[scroll-delay="20"] {
+  transition-delay: 20ms;
+}
+
+[scroll-duration="20"] {
+  transition-duration: 20ms;
+}
+
+[scroll-delay="21"] {
+  transition-delay: 21ms;
+}
+
+[scroll-duration="21"] {
+  transition-duration: 21ms;
+}
+
+[scroll-delay="22"] {
+  transition-delay: 22ms;
+}
+
+[scroll-duration="22"] {
+  transition-duration: 22ms;
+}
+
+[scroll-delay="23"] {
+  transition-delay: 23ms;
+}
+
+[scroll-duration="23"] {
+  transition-duration: 23ms;
+}
+
+[scroll-delay="24"] {
+  transition-delay: 24ms;
+}
+
+[scroll-duration="24"] {
+  transition-duration: 24ms;
+}
+
+[scroll-delay="25"] {
+  transition-delay: 25ms;
+}
+
+[scroll-duration="25"] {
+  transition-duration: 25ms;
+}
+
+[scroll-delay="26"] {
+  transition-delay: 26ms;
+}
+
+[scroll-duration="26"] {
+  transition-duration: 26ms;
+}
+
+[scroll-delay="27"] {
+  transition-delay: 27ms;
+}
+
+[scroll-duration="27"] {
+  transition-duration: 27ms;
+}
+
+[scroll-delay="28"] {
+  transition-delay: 28ms;
+}
+
+[scroll-duration="28"] {
+  transition-duration: 28ms;
+}
+
+[scroll-delay="29"] {
+  transition-delay: 29ms;
+}
+
+[scroll-duration="29"] {
+  transition-duration: 29ms;
+}
+
+[scroll-delay="30"] {
+  transition-delay: 30ms;
+}
+
+[scroll-duration="30"] {
+  transition-duration: 30ms;
+}
+
+[scroll-delay="31"] {
+  transition-delay: 31ms;
+}
+
+[scroll-duration="31"] {
+  transition-duration: 31ms;
+}
+
+[scroll-delay="32"] {
+  transition-delay: 32ms;
+}
+
+[scroll-duration="32"] {
+  transition-duration: 32ms;
+}
+
+[scroll-delay="33"] {
+  transition-delay: 33ms;
+}
+
+[scroll-duration="33"] {
+  transition-duration: 33ms;
+}
+
+[scroll-delay="34"] {
+  transition-delay: 34ms;
+}
+
+[scroll-duration="34"] {
+  transition-duration: 34ms;
+}
+
+[scroll-delay="35"] {
+  transition-delay: 35ms;
+}
+
+[scroll-duration="35"] {
+  transition-duration: 35ms;
+}
+
+[scroll-delay="36"] {
+  transition-delay: 36ms;
+}
+
+[scroll-duration="36"] {
+  transition-duration: 36ms;
+}
+
+[scroll-delay="37"] {
+  transition-delay: 37ms;
+}
+
+[scroll-duration="37"] {
+  transition-duration: 37ms;
+}
+
+[scroll-delay="38"] {
+  transition-delay: 38ms;
+}
+
+[scroll-duration="38"] {
+  transition-duration: 38ms;
+}
+
+[scroll-delay="39"] {
+  transition-delay: 39ms;
+}
+
+[scroll-duration="39"] {
+  transition-duration: 39ms;
+}
+
+[scroll-delay="40"] {
+  transition-delay: 40ms;
+}
+
+[scroll-duration="40"] {
+  transition-duration: 40ms;
+}
+
+[scroll-delay="41"] {
+  transition-delay: 41ms;
+}
+
+[scroll-duration="41"] {
+  transition-duration: 41ms;
+}
+
+[scroll-delay="42"] {
+  transition-delay: 42ms;
+}
+
+[scroll-duration="42"] {
+  transition-duration: 42ms;
+}
+
+[scroll-delay="43"] {
+  transition-delay: 43ms;
+}
+
+[scroll-duration="43"] {
+  transition-duration: 43ms;
+}
+
+[scroll-delay="44"] {
+  transition-delay: 44ms;
+}
+
+[scroll-duration="44"] {
+  transition-duration: 44ms;
+}
+
+[scroll-delay="45"] {
+  transition-delay: 45ms;
+}
+
+[scroll-duration="45"] {
+  transition-duration: 45ms;
+}
+
+[scroll-delay="46"] {
+  transition-delay: 46ms;
+}
+
+[scroll-duration="46"] {
+  transition-duration: 46ms;
+}
+
+[scroll-delay="47"] {
+  transition-delay: 47ms;
+}
+
+[scroll-duration="47"] {
+  transition-duration: 47ms;
+}
+
+[scroll-delay="48"] {
+  transition-delay: 48ms;
+}
+
+[scroll-duration="48"] {
+  transition-duration: 48ms;
+}
+
+[scroll-delay="49"] {
+  transition-delay: 49ms;
+}
+
+[scroll-duration="49"] {
+  transition-duration: 49ms;
+}
+
+[scroll-delay="50"] {
+  transition-delay: 50ms;
+}
+
+[scroll-duration="50"] {
+  transition-duration: 50ms;
+}
+
+[scroll-delay="51"] {
+  transition-delay: 51ms;
+}
+
+[scroll-duration="51"] {
+  transition-duration: 51ms;
+}
+
+[scroll-delay="52"] {
+  transition-delay: 52ms;
+}
+
+[scroll-duration="52"] {
+  transition-duration: 52ms;
+}
+
+[scroll-delay="53"] {
+  transition-delay: 53ms;
+}
+
+[scroll-duration="53"] {
+  transition-duration: 53ms;
+}
+
+[scroll-delay="54"] {
+  transition-delay: 54ms;
+}
+
+[scroll-duration="54"] {
+  transition-duration: 54ms;
+}
+
+[scroll-delay="55"] {
+  transition-delay: 55ms;
+}
+
+[scroll-duration="55"] {
+  transition-duration: 55ms;
+}
+
+[scroll-delay="56"] {
+  transition-delay: 56ms;
+}
+
+[scroll-duration="56"] {
+  transition-duration: 56ms;
+}
+
+[scroll-delay="57"] {
+  transition-delay: 57ms;
+}
+
+[scroll-duration="57"] {
+  transition-duration: 57ms;
+}
+
+[scroll-delay="58"] {
+  transition-delay: 58ms;
+}
+
+[scroll-duration="58"] {
+  transition-duration: 58ms;
+}
+
+[scroll-delay="59"] {
+  transition-delay: 59ms;
+}
+
+[scroll-duration="59"] {
+  transition-duration: 59ms;
+}
+
+[scroll-delay="60"] {
+  transition-delay: 60ms;
+}
+
+[scroll-duration="60"] {
+  transition-duration: 60ms;
+}
+
+[scroll-delay="61"] {
+  transition-delay: 61ms;
+}
+
+[scroll-duration="61"] {
+  transition-duration: 61ms;
+}
+
+[scroll-delay="62"] {
+  transition-delay: 62ms;
+}
+
+[scroll-duration="62"] {
+  transition-duration: 62ms;
+}
+
+[scroll-delay="63"] {
+  transition-delay: 63ms;
+}
+
+[scroll-duration="63"] {
+  transition-duration: 63ms;
+}
+
+[scroll-delay="64"] {
+  transition-delay: 64ms;
+}
+
+[scroll-duration="64"] {
+  transition-duration: 64ms;
+}
+
+[scroll-delay="65"] {
+  transition-delay: 65ms;
+}
+
+[scroll-duration="65"] {
+  transition-duration: 65ms;
+}
+
+[scroll-delay="66"] {
+  transition-delay: 66ms;
+}
+
+[scroll-duration="66"] {
+  transition-duration: 66ms;
+}
+
+[scroll-delay="67"] {
+  transition-delay: 67ms;
+}
+
+[scroll-duration="67"] {
+  transition-duration: 67ms;
+}
+
+[scroll-delay="68"] {
+  transition-delay: 68ms;
+}
+
+[scroll-duration="68"] {
+  transition-duration: 68ms;
+}
+
+[scroll-delay="69"] {
+  transition-delay: 69ms;
+}
+
+[scroll-duration="69"] {
+  transition-duration: 69ms;
+}
+
+[scroll-delay="70"] {
+  transition-delay: 70ms;
+}
+
+[scroll-duration="70"] {
+  transition-duration: 70ms;
+}
+
+[scroll-delay="71"] {
+  transition-delay: 71ms;
+}
+
+[scroll-duration="71"] {
+  transition-duration: 71ms;
+}
+
+[scroll-delay="72"] {
+  transition-delay: 72ms;
+}
+
+[scroll-duration="72"] {
+  transition-duration: 72ms;
+}
+
+[scroll-delay="73"] {
+  transition-delay: 73ms;
+}
+
+[scroll-duration="73"] {
+  transition-duration: 73ms;
+}
+
+[scroll-delay="74"] {
+  transition-delay: 74ms;
+}
+
+[scroll-duration="74"] {
+  transition-duration: 74ms;
+}
+
+[scroll-delay="75"] {
+  transition-delay: 75ms;
+}
+
+[scroll-duration="75"] {
+  transition-duration: 75ms;
+}
+
+[scroll-delay="76"] {
+  transition-delay: 76ms;
+}
+
+[scroll-duration="76"] {
+  transition-duration: 76ms;
+}
+
+[scroll-delay="77"] {
+  transition-delay: 77ms;
+}
+
+[scroll-duration="77"] {
+  transition-duration: 77ms;
+}
+
+[scroll-delay="78"] {
+  transition-delay: 78ms;
+}
+
+[scroll-duration="78"] {
+  transition-duration: 78ms;
+}
+
+[scroll-delay="79"] {
+  transition-delay: 79ms;
+}
+
+[scroll-duration="79"] {
+  transition-duration: 79ms;
+}
+
+[scroll-delay="80"] {
+  transition-delay: 80ms;
+}
+
+[scroll-duration="80"] {
+  transition-duration: 80ms;
+}
+
+[scroll-delay="81"] {
+  transition-delay: 81ms;
+}
+
+[scroll-duration="81"] {
+  transition-duration: 81ms;
+}
+
+[scroll-delay="82"] {
+  transition-delay: 82ms;
+}
+
+[scroll-duration="82"] {
+  transition-duration: 82ms;
+}
+
+[scroll-delay="83"] {
+  transition-delay: 83ms;
+}
+
+[scroll-duration="83"] {
+  transition-duration: 83ms;
+}
+
+[scroll-delay="84"] {
+  transition-delay: 84ms;
+}
+
+[scroll-duration="84"] {
+  transition-duration: 84ms;
+}
+
+[scroll-delay="85"] {
+  transition-delay: 85ms;
+}
+
+[scroll-duration="85"] {
+  transition-duration: 85ms;
+}
+
+[scroll-delay="86"] {
+  transition-delay: 86ms;
+}
+
+[scroll-duration="86"] {
+  transition-duration: 86ms;
+}
+
+[scroll-delay="87"] {
+  transition-delay: 87ms;
+}
+
+[scroll-duration="87"] {
+  transition-duration: 87ms;
+}
+
+[scroll-delay="88"] {
+  transition-delay: 88ms;
+}
+
+[scroll-duration="88"] {
+  transition-duration: 88ms;
+}
+
+[scroll-delay="89"] {
+  transition-delay: 89ms;
+}
+
+[scroll-duration="89"] {
+  transition-duration: 89ms;
+}
+
+[scroll-delay="90"] {
+  transition-delay: 90ms;
+}
+
+[scroll-duration="90"] {
+  transition-duration: 90ms;
+}
+
+[scroll-delay="91"] {
+  transition-delay: 91ms;
+}
+
+[scroll-duration="91"] {
+  transition-duration: 91ms;
+}
+
+[scroll-delay="92"] {
+  transition-delay: 92ms;
+}
+
+[scroll-duration="92"] {
+  transition-duration: 92ms;
+}
+
+[scroll-delay="93"] {
+  transition-delay: 93ms;
+}
+
+[scroll-duration="93"] {
+  transition-duration: 93ms;
+}
+
+[scroll-delay="94"] {
+  transition-delay: 94ms;
+}
+
+[scroll-duration="94"] {
+  transition-duration: 94ms;
+}
+
+[scroll-delay="95"] {
+  transition-delay: 95ms;
+}
+
+[scroll-duration="95"] {
+  transition-duration: 95ms;
+}
+
+[scroll-delay="96"] {
+  transition-delay: 96ms;
+}
+
+[scroll-duration="96"] {
+  transition-duration: 96ms;
+}
+
+[scroll-delay="97"] {
+  transition-delay: 97ms;
+}
+
+[scroll-duration="97"] {
+  transition-duration: 97ms;
+}
+
+[scroll-delay="98"] {
+  transition-delay: 98ms;
+}
+
+[scroll-duration="98"] {
+  transition-duration: 98ms;
+}
+
+[scroll-delay="99"] {
+  transition-delay: 99ms;
+}
+
+[scroll-duration="99"] {
+  transition-duration: 99ms;
+}
+
+[scroll-delay="100"] {
+  transition-delay: 100ms;
+}
+
+[scroll-duration="100"] {
+  transition-duration: 100ms;
+}
+
+[scroll-delay="101"] {
+  transition-delay: 101ms;
+}
+
+[scroll-duration="101"] {
+  transition-duration: 101ms;
+}
+
+[scroll-delay="102"] {
+  transition-delay: 102ms;
+}
+
+[scroll-duration="102"] {
+  transition-duration: 102ms;
+}
+
+[scroll-delay="103"] {
+  transition-delay: 103ms;
+}
+
+[scroll-duration="103"] {
+  transition-duration: 103ms;
+}
+
+[scroll-delay="104"] {
+  transition-delay: 104ms;
+}
+
+[scroll-duration="104"] {
+  transition-duration: 104ms;
+}
+
+[scroll-delay="105"] {
+  transition-delay: 105ms;
+}
+
+[scroll-duration="105"] {
+  transition-duration: 105ms;
+}
+
+[scroll-delay="106"] {
+  transition-delay: 106ms;
+}
+
+[scroll-duration="106"] {
+  transition-duration: 106ms;
+}
+
+[scroll-delay="107"] {
+  transition-delay: 107ms;
+}
+
+[scroll-duration="107"] {
+  transition-duration: 107ms;
+}
+
+[scroll-delay="108"] {
+  transition-delay: 108ms;
+}
+
+[scroll-duration="108"] {
+  transition-duration: 108ms;
+}
+
+[scroll-delay="109"] {
+  transition-delay: 109ms;
+}
+
+[scroll-duration="109"] {
+  transition-duration: 109ms;
+}
+
+[scroll-delay="110"] {
+  transition-delay: 110ms;
+}
+
+[scroll-duration="110"] {
+  transition-duration: 110ms;
+}
+
+[scroll-delay="111"] {
+  transition-delay: 111ms;
+}
+
+[scroll-duration="111"] {
+  transition-duration: 111ms;
+}
+
+[scroll-delay="112"] {
+  transition-delay: 112ms;
+}
+
+[scroll-duration="112"] {
+  transition-duration: 112ms;
+}
+
+[scroll-delay="113"] {
+  transition-delay: 113ms;
+}
+
+[scroll-duration="113"] {
+  transition-duration: 113ms;
+}
+
+[scroll-delay="114"] {
+  transition-delay: 114ms;
+}
+
+[scroll-duration="114"] {
+  transition-duration: 114ms;
+}
+
+[scroll-delay="115"] {
+  transition-delay: 115ms;
+}
+
+[scroll-duration="115"] {
+  transition-duration: 115ms;
+}
+
+[scroll-delay="116"] {
+  transition-delay: 116ms;
+}
+
+[scroll-duration="116"] {
+  transition-duration: 116ms;
+}
+
+[scroll-delay="117"] {
+  transition-delay: 117ms;
+}
+
+[scroll-duration="117"] {
+  transition-duration: 117ms;
+}
+
+[scroll-delay="118"] {
+  transition-delay: 118ms;
+}
+
+[scroll-duration="118"] {
+  transition-duration: 118ms;
+}
+
+[scroll-delay="119"] {
+  transition-delay: 119ms;
+}
+
+[scroll-duration="119"] {
+  transition-duration: 119ms;
+}
+
+[scroll-delay="120"] {
+  transition-delay: 120ms;
+}
+
+[scroll-duration="120"] {
+  transition-duration: 120ms;
+}
+
+[scroll-delay="121"] {
+  transition-delay: 121ms;
+}
+
+[scroll-duration="121"] {
+  transition-duration: 121ms;
+}
+
+[scroll-delay="122"] {
+  transition-delay: 122ms;
+}
+
+[scroll-duration="122"] {
+  transition-duration: 122ms;
+}
+
+[scroll-delay="123"] {
+  transition-delay: 123ms;
+}
+
+[scroll-duration="123"] {
+  transition-duration: 123ms;
+}
+
+[scroll-delay="124"] {
+  transition-delay: 124ms;
+}
+
+[scroll-duration="124"] {
+  transition-duration: 124ms;
+}
+
+[scroll-delay="125"] {
+  transition-delay: 125ms;
+}
+
+[scroll-duration="125"] {
+  transition-duration: 125ms;
+}
+
+[scroll-delay="126"] {
+  transition-delay: 126ms;
+}
+
+[scroll-duration="126"] {
+  transition-duration: 126ms;
+}
+
+[scroll-delay="127"] {
+  transition-delay: 127ms;
+}
+
+[scroll-duration="127"] {
+  transition-duration: 127ms;
+}
+
+[scroll-delay="128"] {
+  transition-delay: 128ms;
+}
+
+[scroll-duration="128"] {
+  transition-duration: 128ms;
+}
+
+[scroll-delay="129"] {
+  transition-delay: 129ms;
+}
+
+[scroll-duration="129"] {
+  transition-duration: 129ms;
+}
+
+[scroll-delay="130"] {
+  transition-delay: 130ms;
+}
+
+[scroll-duration="130"] {
+  transition-duration: 130ms;
+}
+
+[scroll-delay="131"] {
+  transition-delay: 131ms;
+}
+
+[scroll-duration="131"] {
+  transition-duration: 131ms;
+}
+
+[scroll-delay="132"] {
+  transition-delay: 132ms;
+}
+
+[scroll-duration="132"] {
+  transition-duration: 132ms;
+}
+
+[scroll-delay="133"] {
+  transition-delay: 133ms;
+}
+
+[scroll-duration="133"] {
+  transition-duration: 133ms;
+}
+
+[scroll-delay="134"] {
+  transition-delay: 134ms;
+}
+
+[scroll-duration="134"] {
+  transition-duration: 134ms;
+}
+
+[scroll-delay="135"] {
+  transition-delay: 135ms;
+}
+
+[scroll-duration="135"] {
+  transition-duration: 135ms;
+}
+
+[scroll-delay="136"] {
+  transition-delay: 136ms;
+}
+
+[scroll-duration="136"] {
+  transition-duration: 136ms;
+}
+
+[scroll-delay="137"] {
+  transition-delay: 137ms;
+}
+
+[scroll-duration="137"] {
+  transition-duration: 137ms;
+}
+
+[scroll-delay="138"] {
+  transition-delay: 138ms;
+}
+
+[scroll-duration="138"] {
+  transition-duration: 138ms;
+}
+
+[scroll-delay="139"] {
+  transition-delay: 139ms;
+}
+
+[scroll-duration="139"] {
+  transition-duration: 139ms;
+}
+
+[scroll-delay="140"] {
+  transition-delay: 140ms;
+}
+
+[scroll-duration="140"] {
+  transition-duration: 140ms;
+}
+
+[scroll-delay="141"] {
+  transition-delay: 141ms;
+}
+
+[scroll-duration="141"] {
+  transition-duration: 141ms;
+}
+
+[scroll-delay="142"] {
+  transition-delay: 142ms;
+}
+
+[scroll-duration="142"] {
+  transition-duration: 142ms;
+}
+
+[scroll-delay="143"] {
+  transition-delay: 143ms;
+}
+
+[scroll-duration="143"] {
+  transition-duration: 143ms;
+}
+
+[scroll-delay="144"] {
+  transition-delay: 144ms;
+}
+
+[scroll-duration="144"] {
+  transition-duration: 144ms;
+}
+
+[scroll-delay="145"] {
+  transition-delay: 145ms;
+}
+
+[scroll-duration="145"] {
+  transition-duration: 145ms;
+}
+
+[scroll-delay="146"] {
+  transition-delay: 146ms;
+}
+
+[scroll-duration="146"] {
+  transition-duration: 146ms;
+}
+
+[scroll-delay="147"] {
+  transition-delay: 147ms;
+}
+
+[scroll-duration="147"] {
+  transition-duration: 147ms;
+}
+
+[scroll-delay="148"] {
+  transition-delay: 148ms;
+}
+
+[scroll-duration="148"] {
+  transition-duration: 148ms;
+}
+
+[scroll-delay="149"] {
+  transition-delay: 149ms;
+}
+
+[scroll-duration="149"] {
+  transition-duration: 149ms;
+}
+
+[scroll-delay="150"] {
+  transition-delay: 150ms;
+}
+
+[scroll-duration="150"] {
+  transition-duration: 150ms;
+}
+
+[scroll-delay="151"] {
+  transition-delay: 151ms;
+}
+
+[scroll-duration="151"] {
+  transition-duration: 151ms;
+}
+
+[scroll-delay="152"] {
+  transition-delay: 152ms;
+}
+
+[scroll-duration="152"] {
+  transition-duration: 152ms;
+}
+
+[scroll-delay="153"] {
+  transition-delay: 153ms;
+}
+
+[scroll-duration="153"] {
+  transition-duration: 153ms;
+}
+
+[scroll-delay="154"] {
+  transition-delay: 154ms;
+}
+
+[scroll-duration="154"] {
+  transition-duration: 154ms;
+}
+
+[scroll-delay="155"] {
+  transition-delay: 155ms;
+}
+
+[scroll-duration="155"] {
+  transition-duration: 155ms;
+}
+
+[scroll-delay="156"] {
+  transition-delay: 156ms;
+}
+
+[scroll-duration="156"] {
+  transition-duration: 156ms;
+}
+
+[scroll-delay="157"] {
+  transition-delay: 157ms;
+}
+
+[scroll-duration="157"] {
+  transition-duration: 157ms;
+}
+
+[scroll-delay="158"] {
+  transition-delay: 158ms;
+}
+
+[scroll-duration="158"] {
+  transition-duration: 158ms;
+}
+
+[scroll-delay="159"] {
+  transition-delay: 159ms;
+}
+
+[scroll-duration="159"] {
+  transition-duration: 159ms;
+}
+
+[scroll-delay="160"] {
+  transition-delay: 160ms;
+}
+
+[scroll-duration="160"] {
+  transition-duration: 160ms;
+}
+
+[scroll-delay="161"] {
+  transition-delay: 161ms;
+}
+
+[scroll-duration="161"] {
+  transition-duration: 161ms;
+}
+
+[scroll-delay="162"] {
+  transition-delay: 162ms;
+}
+
+[scroll-duration="162"] {
+  transition-duration: 162ms;
+}
+
+[scroll-delay="163"] {
+  transition-delay: 163ms;
+}
+
+[scroll-duration="163"] {
+  transition-duration: 163ms;
+}
+
+[scroll-delay="164"] {
+  transition-delay: 164ms;
+}
+
+[scroll-duration="164"] {
+  transition-duration: 164ms;
+}
+
+[scroll-delay="165"] {
+  transition-delay: 165ms;
+}
+
+[scroll-duration="165"] {
+  transition-duration: 165ms;
+}
+
+[scroll-delay="166"] {
+  transition-delay: 166ms;
+}
+
+[scroll-duration="166"] {
+  transition-duration: 166ms;
+}
+
+[scroll-delay="167"] {
+  transition-delay: 167ms;
+}
+
+[scroll-duration="167"] {
+  transition-duration: 167ms;
+}
+
+[scroll-delay="168"] {
+  transition-delay: 168ms;
+}
+
+[scroll-duration="168"] {
+  transition-duration: 168ms;
+}
+
+[scroll-delay="169"] {
+  transition-delay: 169ms;
+}
+
+[scroll-duration="169"] {
+  transition-duration: 169ms;
+}
+
+[scroll-delay="170"] {
+  transition-delay: 170ms;
+}
+
+[scroll-duration="170"] {
+  transition-duration: 170ms;
+}
+
+[scroll-delay="171"] {
+  transition-delay: 171ms;
+}
+
+[scroll-duration="171"] {
+  transition-duration: 171ms;
+}
+
+[scroll-delay="172"] {
+  transition-delay: 172ms;
+}
+
+[scroll-duration="172"] {
+  transition-duration: 172ms;
+}
+
+[scroll-delay="173"] {
+  transition-delay: 173ms;
+}
+
+[scroll-duration="173"] {
+  transition-duration: 173ms;
+}
+
+[scroll-delay="174"] {
+  transition-delay: 174ms;
+}
+
+[scroll-duration="174"] {
+  transition-duration: 174ms;
+}
+
+[scroll-delay="175"] {
+  transition-delay: 175ms;
+}
+
+[scroll-duration="175"] {
+  transition-duration: 175ms;
+}
+
+[scroll-delay="176"] {
+  transition-delay: 176ms;
+}
+
+[scroll-duration="176"] {
+  transition-duration: 176ms;
+}
+
+[scroll-delay="177"] {
+  transition-delay: 177ms;
+}
+
+[scroll-duration="177"] {
+  transition-duration: 177ms;
+}
+
+[scroll-delay="178"] {
+  transition-delay: 178ms;
+}
+
+[scroll-duration="178"] {
+  transition-duration: 178ms;
+}
+
+[scroll-delay="179"] {
+  transition-delay: 179ms;
+}
+
+[scroll-duration="179"] {
+  transition-duration: 179ms;
+}
+
+[scroll-delay="180"] {
+  transition-delay: 180ms;
+}
+
+[scroll-duration="180"] {
+  transition-duration: 180ms;
+}
+
+[scroll-delay="181"] {
+  transition-delay: 181ms;
+}
+
+[scroll-duration="181"] {
+  transition-duration: 181ms;
+}
+
+[scroll-delay="182"] {
+  transition-delay: 182ms;
+}
+
+[scroll-duration="182"] {
+  transition-duration: 182ms;
+}
+
+[scroll-delay="183"] {
+  transition-delay: 183ms;
+}
+
+[scroll-duration="183"] {
+  transition-duration: 183ms;
+}
+
+[scroll-delay="184"] {
+  transition-delay: 184ms;
+}
+
+[scroll-duration="184"] {
+  transition-duration: 184ms;
+}
+
+[scroll-delay="185"] {
+  transition-delay: 185ms;
+}
+
+[scroll-duration="185"] {
+  transition-duration: 185ms;
+}
+
+[scroll-delay="186"] {
+  transition-delay: 186ms;
+}
+
+[scroll-duration="186"] {
+  transition-duration: 186ms;
+}
+
+[scroll-delay="187"] {
+  transition-delay: 187ms;
+}
+
+[scroll-duration="187"] {
+  transition-duration: 187ms;
+}
+
+[scroll-delay="188"] {
+  transition-delay: 188ms;
+}
+
+[scroll-duration="188"] {
+  transition-duration: 188ms;
+}
+
+[scroll-delay="189"] {
+  transition-delay: 189ms;
+}
+
+[scroll-duration="189"] {
+  transition-duration: 189ms;
+}
+
+[scroll-delay="190"] {
+  transition-delay: 190ms;
+}
+
+[scroll-duration="190"] {
+  transition-duration: 190ms;
+}
+
+[scroll-delay="191"] {
+  transition-delay: 191ms;
+}
+
+[scroll-duration="191"] {
+  transition-duration: 191ms;
+}
+
+[scroll-delay="192"] {
+  transition-delay: 192ms;
+}
+
+[scroll-duration="192"] {
+  transition-duration: 192ms;
+}
+
+[scroll-delay="193"] {
+  transition-delay: 193ms;
+}
+
+[scroll-duration="193"] {
+  transition-duration: 193ms;
+}
+
+[scroll-delay="194"] {
+  transition-delay: 194ms;
+}
+
+[scroll-duration="194"] {
+  transition-duration: 194ms;
+}
+
+[scroll-delay="195"] {
+  transition-delay: 195ms;
+}
+
+[scroll-duration="195"] {
+  transition-duration: 195ms;
+}
+
+[scroll-delay="196"] {
+  transition-delay: 196ms;
+}
+
+[scroll-duration="196"] {
+  transition-duration: 196ms;
+}
+
+[scroll-delay="197"] {
+  transition-delay: 197ms;
+}
+
+[scroll-duration="197"] {
+  transition-duration: 197ms;
+}
+
+[scroll-delay="198"] {
+  transition-delay: 198ms;
+}
+
+[scroll-duration="198"] {
+  transition-duration: 198ms;
+}
+
+[scroll-delay="199"] {
+  transition-delay: 199ms;
+}
+
+[scroll-duration="199"] {
+  transition-duration: 199ms;
+}
+
+[scroll-delay="200"] {
+  transition-delay: 200ms;
+}
+
+[scroll-duration="200"] {
+  transition-duration: 200ms;
+}
+
+[scroll-delay="201"] {
+  transition-delay: 201ms;
+}
+
+[scroll-duration="201"] {
+  transition-duration: 201ms;
+}
+
+[scroll-delay="202"] {
+  transition-delay: 202ms;
+}
+
+[scroll-duration="202"] {
+  transition-duration: 202ms;
+}
+
+[scroll-delay="203"] {
+  transition-delay: 203ms;
+}
+
+[scroll-duration="203"] {
+  transition-duration: 203ms;
+}
+
+[scroll-delay="204"] {
+  transition-delay: 204ms;
+}
+
+[scroll-duration="204"] {
+  transition-duration: 204ms;
+}
+
+[scroll-delay="205"] {
+  transition-delay: 205ms;
+}
+
+[scroll-duration="205"] {
+  transition-duration: 205ms;
+}
+
+[scroll-delay="206"] {
+  transition-delay: 206ms;
+}
+
+[scroll-duration="206"] {
+  transition-duration: 206ms;
+}
+
+[scroll-delay="207"] {
+  transition-delay: 207ms;
+}
+
+[scroll-duration="207"] {
+  transition-duration: 207ms;
+}
+
+[scroll-delay="208"] {
+  transition-delay: 208ms;
+}
+
+[scroll-duration="208"] {
+  transition-duration: 208ms;
+}
+
+[scroll-delay="209"] {
+  transition-delay: 209ms;
+}
+
+[scroll-duration="209"] {
+  transition-duration: 209ms;
+}
+
+[scroll-delay="210"] {
+  transition-delay: 210ms;
+}
+
+[scroll-duration="210"] {
+  transition-duration: 210ms;
+}
+
+[scroll-delay="211"] {
+  transition-delay: 211ms;
+}
+
+[scroll-duration="211"] {
+  transition-duration: 211ms;
+}
+
+[scroll-delay="212"] {
+  transition-delay: 212ms;
+}
+
+[scroll-duration="212"] {
+  transition-duration: 212ms;
+}
+
+[scroll-delay="213"] {
+  transition-delay: 213ms;
+}
+
+[scroll-duration="213"] {
+  transition-duration: 213ms;
+}
+
+[scroll-delay="214"] {
+  transition-delay: 214ms;
+}
+
+[scroll-duration="214"] {
+  transition-duration: 214ms;
+}
+
+[scroll-delay="215"] {
+  transition-delay: 215ms;
+}
+
+[scroll-duration="215"] {
+  transition-duration: 215ms;
+}
+
+[scroll-delay="216"] {
+  transition-delay: 216ms;
+}
+
+[scroll-duration="216"] {
+  transition-duration: 216ms;
+}
+
+[scroll-delay="217"] {
+  transition-delay: 217ms;
+}
+
+[scroll-duration="217"] {
+  transition-duration: 217ms;
+}
+
+[scroll-delay="218"] {
+  transition-delay: 218ms;
+}
+
+[scroll-duration="218"] {
+  transition-duration: 218ms;
+}
+
+[scroll-delay="219"] {
+  transition-delay: 219ms;
+}
+
+[scroll-duration="219"] {
+  transition-duration: 219ms;
+}
+
+[scroll-delay="220"] {
+  transition-delay: 220ms;
+}
+
+[scroll-duration="220"] {
+  transition-duration: 220ms;
+}
+
+[scroll-delay="221"] {
+  transition-delay: 221ms;
+}
+
+[scroll-duration="221"] {
+  transition-duration: 221ms;
+}
+
+[scroll-delay="222"] {
+  transition-delay: 222ms;
+}
+
+[scroll-duration="222"] {
+  transition-duration: 222ms;
+}
+
+[scroll-delay="223"] {
+  transition-delay: 223ms;
+}
+
+[scroll-duration="223"] {
+  transition-duration: 223ms;
+}
+
+[scroll-delay="224"] {
+  transition-delay: 224ms;
+}
+
+[scroll-duration="224"] {
+  transition-duration: 224ms;
+}
+
+[scroll-delay="225"] {
+  transition-delay: 225ms;
+}
+
+[scroll-duration="225"] {
+  transition-duration: 225ms;
+}
+
+[scroll-delay="226"] {
+  transition-delay: 226ms;
+}
+
+[scroll-duration="226"] {
+  transition-duration: 226ms;
+}
+
+[scroll-delay="227"] {
+  transition-delay: 227ms;
+}
+
+[scroll-duration="227"] {
+  transition-duration: 227ms;
+}
+
+[scroll-delay="228"] {
+  transition-delay: 228ms;
+}
+
+[scroll-duration="228"] {
+  transition-duration: 228ms;
+}
+
+[scroll-delay="229"] {
+  transition-delay: 229ms;
+}
+
+[scroll-duration="229"] {
+  transition-duration: 229ms;
+}
+
+[scroll-delay="230"] {
+  transition-delay: 230ms;
+}
+
+[scroll-duration="230"] {
+  transition-duration: 230ms;
+}
+
+[scroll-delay="231"] {
+  transition-delay: 231ms;
+}
+
+[scroll-duration="231"] {
+  transition-duration: 231ms;
+}
+
+[scroll-delay="232"] {
+  transition-delay: 232ms;
+}
+
+[scroll-duration="232"] {
+  transition-duration: 232ms;
+}
+
+[scroll-delay="233"] {
+  transition-delay: 233ms;
+}
+
+[scroll-duration="233"] {
+  transition-duration: 233ms;
+}
+
+[scroll-delay="234"] {
+  transition-delay: 234ms;
+}
+
+[scroll-duration="234"] {
+  transition-duration: 234ms;
+}
+
+[scroll-delay="235"] {
+  transition-delay: 235ms;
+}
+
+[scroll-duration="235"] {
+  transition-duration: 235ms;
+}
+
+[scroll-delay="236"] {
+  transition-delay: 236ms;
+}
+
+[scroll-duration="236"] {
+  transition-duration: 236ms;
+}
+
+[scroll-delay="237"] {
+  transition-delay: 237ms;
+}
+
+[scroll-duration="237"] {
+  transition-duration: 237ms;
+}
+
+[scroll-delay="238"] {
+  transition-delay: 238ms;
+}
+
+[scroll-duration="238"] {
+  transition-duration: 238ms;
+}
+
+[scroll-delay="239"] {
+  transition-delay: 239ms;
+}
+
+[scroll-duration="239"] {
+  transition-duration: 239ms;
+}
+
+[scroll-delay="240"] {
+  transition-delay: 240ms;
+}
+
+[scroll-duration="240"] {
+  transition-duration: 240ms;
+}
+
+[scroll-delay="241"] {
+  transition-delay: 241ms;
+}
+
+[scroll-duration="241"] {
+  transition-duration: 241ms;
+}
+
+[scroll-delay="242"] {
+  transition-delay: 242ms;
+}
+
+[scroll-duration="242"] {
+  transition-duration: 242ms;
+}
+
+[scroll-delay="243"] {
+  transition-delay: 243ms;
+}
+
+[scroll-duration="243"] {
+  transition-duration: 243ms;
+}
+
+[scroll-delay="244"] {
+  transition-delay: 244ms;
+}
+
+[scroll-duration="244"] {
+  transition-duration: 244ms;
+}
+
+[scroll-delay="245"] {
+  transition-delay: 245ms;
+}
+
+[scroll-duration="245"] {
+  transition-duration: 245ms;
+}
+
+[scroll-delay="246"] {
+  transition-delay: 246ms;
+}
+
+[scroll-duration="246"] {
+  transition-duration: 246ms;
+}
+
+[scroll-delay="247"] {
+  transition-delay: 247ms;
+}
+
+[scroll-duration="247"] {
+  transition-duration: 247ms;
+}
+
+[scroll-delay="248"] {
+  transition-delay: 248ms;
+}
+
+[scroll-duration="248"] {
+  transition-duration: 248ms;
+}
+
+[scroll-delay="249"] {
+  transition-delay: 249ms;
+}
+
+[scroll-duration="249"] {
+  transition-duration: 249ms;
+}
+
+[scroll-delay="250"] {
+  transition-delay: 250ms;
+}
+
+[scroll-duration="250"] {
+  transition-duration: 250ms;
+}
+
+[scroll-delay="251"] {
+  transition-delay: 251ms;
+}
+
+[scroll-duration="251"] {
+  transition-duration: 251ms;
+}
+
+[scroll-delay="252"] {
+  transition-delay: 252ms;
+}
+
+[scroll-duration="252"] {
+  transition-duration: 252ms;
+}
+
+[scroll-delay="253"] {
+  transition-delay: 253ms;
+}
+
+[scroll-duration="253"] {
+  transition-duration: 253ms;
+}
+
+[scroll-delay="254"] {
+  transition-delay: 254ms;
+}
+
+[scroll-duration="254"] {
+  transition-duration: 254ms;
+}
+
+[scroll-delay="255"] {
+  transition-delay: 255ms;
+}
+
+[scroll-duration="255"] {
+  transition-duration: 255ms;
+}
+
+[scroll-delay="256"] {
+  transition-delay: 256ms;
+}
+
+[scroll-duration="256"] {
+  transition-duration: 256ms;
+}
+
+[scroll-delay="257"] {
+  transition-delay: 257ms;
+}
+
+[scroll-duration="257"] {
+  transition-duration: 257ms;
+}
+
+[scroll-delay="258"] {
+  transition-delay: 258ms;
+}
+
+[scroll-duration="258"] {
+  transition-duration: 258ms;
+}
+
+[scroll-delay="259"] {
+  transition-delay: 259ms;
+}
+
+[scroll-duration="259"] {
+  transition-duration: 259ms;
+}
+
+[scroll-delay="260"] {
+  transition-delay: 260ms;
+}
+
+[scroll-duration="260"] {
+  transition-duration: 260ms;
+}
+
+[scroll-delay="261"] {
+  transition-delay: 261ms;
+}
+
+[scroll-duration="261"] {
+  transition-duration: 261ms;
+}
+
+[scroll-delay="262"] {
+  transition-delay: 262ms;
+}
+
+[scroll-duration="262"] {
+  transition-duration: 262ms;
+}
+
+[scroll-delay="263"] {
+  transition-delay: 263ms;
+}
+
+[scroll-duration="263"] {
+  transition-duration: 263ms;
+}
+
+[scroll-delay="264"] {
+  transition-delay: 264ms;
+}
+
+[scroll-duration="264"] {
+  transition-duration: 264ms;
+}
+
+[scroll-delay="265"] {
+  transition-delay: 265ms;
+}
+
+[scroll-duration="265"] {
+  transition-duration: 265ms;
+}
+
+[scroll-delay="266"] {
+  transition-delay: 266ms;
+}
+
+[scroll-duration="266"] {
+  transition-duration: 266ms;
+}
+
+[scroll-delay="267"] {
+  transition-delay: 267ms;
+}
+
+[scroll-duration="267"] {
+  transition-duration: 267ms;
+}
+
+[scroll-delay="268"] {
+  transition-delay: 268ms;
+}
+
+[scroll-duration="268"] {
+  transition-duration: 268ms;
+}
+
+[scroll-delay="269"] {
+  transition-delay: 269ms;
+}
+
+[scroll-duration="269"] {
+  transition-duration: 269ms;
+}
+
+[scroll-delay="270"] {
+  transition-delay: 270ms;
+}
+
+[scroll-duration="270"] {
+  transition-duration: 270ms;
+}
+
+[scroll-delay="271"] {
+  transition-delay: 271ms;
+}
+
+[scroll-duration="271"] {
+  transition-duration: 271ms;
+}
+
+[scroll-delay="272"] {
+  transition-delay: 272ms;
+}
+
+[scroll-duration="272"] {
+  transition-duration: 272ms;
+}
+
+[scroll-delay="273"] {
+  transition-delay: 273ms;
+}
+
+[scroll-duration="273"] {
+  transition-duration: 273ms;
+}
+
+[scroll-delay="274"] {
+  transition-delay: 274ms;
+}
+
+[scroll-duration="274"] {
+  transition-duration: 274ms;
+}
+
+[scroll-delay="275"] {
+  transition-delay: 275ms;
+}
+
+[scroll-duration="275"] {
+  transition-duration: 275ms;
+}
+
+[scroll-delay="276"] {
+  transition-delay: 276ms;
+}
+
+[scroll-duration="276"] {
+  transition-duration: 276ms;
+}
+
+[scroll-delay="277"] {
+  transition-delay: 277ms;
+}
+
+[scroll-duration="277"] {
+  transition-duration: 277ms;
+}
+
+[scroll-delay="278"] {
+  transition-delay: 278ms;
+}
+
+[scroll-duration="278"] {
+  transition-duration: 278ms;
+}
+
+[scroll-delay="279"] {
+  transition-delay: 279ms;
+}
+
+[scroll-duration="279"] {
+  transition-duration: 279ms;
+}
+
+[scroll-delay="280"] {
+  transition-delay: 280ms;
+}
+
+[scroll-duration="280"] {
+  transition-duration: 280ms;
+}
+
+[scroll-delay="281"] {
+  transition-delay: 281ms;
+}
+
+[scroll-duration="281"] {
+  transition-duration: 281ms;
+}
+
+[scroll-delay="282"] {
+  transition-delay: 282ms;
+}
+
+[scroll-duration="282"] {
+  transition-duration: 282ms;
+}
+
+[scroll-delay="283"] {
+  transition-delay: 283ms;
+}
+
+[scroll-duration="283"] {
+  transition-duration: 283ms;
+}
+
+[scroll-delay="284"] {
+  transition-delay: 284ms;
+}
+
+[scroll-duration="284"] {
+  transition-duration: 284ms;
+}
+
+[scroll-delay="285"] {
+  transition-delay: 285ms;
+}
+
+[scroll-duration="285"] {
+  transition-duration: 285ms;
+}
+
+[scroll-delay="286"] {
+  transition-delay: 286ms;
+}
+
+[scroll-duration="286"] {
+  transition-duration: 286ms;
+}
+
+[scroll-delay="287"] {
+  transition-delay: 287ms;
+}
+
+[scroll-duration="287"] {
+  transition-duration: 287ms;
+}
+
+[scroll-delay="288"] {
+  transition-delay: 288ms;
+}
+
+[scroll-duration="288"] {
+  transition-duration: 288ms;
+}
+
+[scroll-delay="289"] {
+  transition-delay: 289ms;
+}
+
+[scroll-duration="289"] {
+  transition-duration: 289ms;
+}
+
+[scroll-delay="290"] {
+  transition-delay: 290ms;
+}
+
+[scroll-duration="290"] {
+  transition-duration: 290ms;
+}
+
+[scroll-delay="291"] {
+  transition-delay: 291ms;
+}
+
+[scroll-duration="291"] {
+  transition-duration: 291ms;
+}
+
+[scroll-delay="292"] {
+  transition-delay: 292ms;
+}
+
+[scroll-duration="292"] {
+  transition-duration: 292ms;
+}
+
+[scroll-delay="293"] {
+  transition-delay: 293ms;
+}
+
+[scroll-duration="293"] {
+  transition-duration: 293ms;
+}
+
+[scroll-delay="294"] {
+  transition-delay: 294ms;
+}
+
+[scroll-duration="294"] {
+  transition-duration: 294ms;
+}
+
+[scroll-delay="295"] {
+  transition-delay: 295ms;
+}
+
+[scroll-duration="295"] {
+  transition-duration: 295ms;
+}
+
+[scroll-delay="296"] {
+  transition-delay: 296ms;
+}
+
+[scroll-duration="296"] {
+  transition-duration: 296ms;
+}
+
+[scroll-delay="297"] {
+  transition-delay: 297ms;
+}
+
+[scroll-duration="297"] {
+  transition-duration: 297ms;
+}
+
+[scroll-delay="298"] {
+  transition-delay: 298ms;
+}
+
+[scroll-duration="298"] {
+  transition-duration: 298ms;
+}
+
+[scroll-delay="299"] {
+  transition-delay: 299ms;
+}
+
+[scroll-duration="299"] {
+  transition-duration: 299ms;
+}
+
+[scroll-delay="300"] {
+  transition-delay: 300ms;
+}
+
+[scroll-duration="300"] {
+  transition-duration: 300ms;
+}
+
+[scroll-delay="301"] {
+  transition-delay: 301ms;
+}
+
+[scroll-duration="301"] {
+  transition-duration: 301ms;
+}
+
+[scroll-delay="302"] {
+  transition-delay: 302ms;
+}
+
+[scroll-duration="302"] {
+  transition-duration: 302ms;
+}
+
+[scroll-delay="303"] {
+  transition-delay: 303ms;
+}
+
+[scroll-duration="303"] {
+  transition-duration: 303ms;
+}
+
+[scroll-delay="304"] {
+  transition-delay: 304ms;
+}
+
+[scroll-duration="304"] {
+  transition-duration: 304ms;
+}
+
+[scroll-delay="305"] {
+  transition-delay: 305ms;
+}
+
+[scroll-duration="305"] {
+  transition-duration: 305ms;
+}
+
+[scroll-delay="306"] {
+  transition-delay: 306ms;
+}
+
+[scroll-duration="306"] {
+  transition-duration: 306ms;
+}
+
+[scroll-delay="307"] {
+  transition-delay: 307ms;
+}
+
+[scroll-duration="307"] {
+  transition-duration: 307ms;
+}
+
+[scroll-delay="308"] {
+  transition-delay: 308ms;
+}
+
+[scroll-duration="308"] {
+  transition-duration: 308ms;
+}
+
+[scroll-delay="309"] {
+  transition-delay: 309ms;
+}
+
+[scroll-duration="309"] {
+  transition-duration: 309ms;
+}
+
+[scroll-delay="310"] {
+  transition-delay: 310ms;
+}
+
+[scroll-duration="310"] {
+  transition-duration: 310ms;
+}
+
+[scroll-delay="311"] {
+  transition-delay: 311ms;
+}
+
+[scroll-duration="311"] {
+  transition-duration: 311ms;
+}
+
+[scroll-delay="312"] {
+  transition-delay: 312ms;
+}
+
+[scroll-duration="312"] {
+  transition-duration: 312ms;
+}
+
+[scroll-delay="313"] {
+  transition-delay: 313ms;
+}
+
+[scroll-duration="313"] {
+  transition-duration: 313ms;
+}
+
+[scroll-delay="314"] {
+  transition-delay: 314ms;
+}
+
+[scroll-duration="314"] {
+  transition-duration: 314ms;
+}
+
+[scroll-delay="315"] {
+  transition-delay: 315ms;
+}
+
+[scroll-duration="315"] {
+  transition-duration: 315ms;
+}
+
+[scroll-delay="316"] {
+  transition-delay: 316ms;
+}
+
+[scroll-duration="316"] {
+  transition-duration: 316ms;
+}
+
+[scroll-delay="317"] {
+  transition-delay: 317ms;
+}
+
+[scroll-duration="317"] {
+  transition-duration: 317ms;
+}
+
+[scroll-delay="318"] {
+  transition-delay: 318ms;
+}
+
+[scroll-duration="318"] {
+  transition-duration: 318ms;
+}
+
+[scroll-delay="319"] {
+  transition-delay: 319ms;
+}
+
+[scroll-duration="319"] {
+  transition-duration: 319ms;
+}
+
+[scroll-delay="320"] {
+  transition-delay: 320ms;
+}
+
+[scroll-duration="320"] {
+  transition-duration: 320ms;
+}
+
+[scroll-delay="321"] {
+  transition-delay: 321ms;
+}
+
+[scroll-duration="321"] {
+  transition-duration: 321ms;
+}
+
+[scroll-delay="322"] {
+  transition-delay: 322ms;
+}
+
+[scroll-duration="322"] {
+  transition-duration: 322ms;
+}
+
+[scroll-delay="323"] {
+  transition-delay: 323ms;
+}
+
+[scroll-duration="323"] {
+  transition-duration: 323ms;
+}
+
+[scroll-delay="324"] {
+  transition-delay: 324ms;
+}
+
+[scroll-duration="324"] {
+  transition-duration: 324ms;
+}
+
+[scroll-delay="325"] {
+  transition-delay: 325ms;
+}
+
+[scroll-duration="325"] {
+  transition-duration: 325ms;
+}
+
+[scroll-delay="326"] {
+  transition-delay: 326ms;
+}
+
+[scroll-duration="326"] {
+  transition-duration: 326ms;
+}
+
+[scroll-delay="327"] {
+  transition-delay: 327ms;
+}
+
+[scroll-duration="327"] {
+  transition-duration: 327ms;
+}
+
+[scroll-delay="328"] {
+  transition-delay: 328ms;
+}
+
+[scroll-duration="328"] {
+  transition-duration: 328ms;
+}
+
+[scroll-delay="329"] {
+  transition-delay: 329ms;
+}
+
+[scroll-duration="329"] {
+  transition-duration: 329ms;
+}
+
+[scroll-delay="330"] {
+  transition-delay: 330ms;
+}
+
+[scroll-duration="330"] {
+  transition-duration: 330ms;
+}
+
+[scroll-delay="331"] {
+  transition-delay: 331ms;
+}
+
+[scroll-duration="331"] {
+  transition-duration: 331ms;
+}
+
+[scroll-delay="332"] {
+  transition-delay: 332ms;
+}
+
+[scroll-duration="332"] {
+  transition-duration: 332ms;
+}
+
+[scroll-delay="333"] {
+  transition-delay: 333ms;
+}
+
+[scroll-duration="333"] {
+  transition-duration: 333ms;
+}
+
+[scroll-delay="334"] {
+  transition-delay: 334ms;
+}
+
+[scroll-duration="334"] {
+  transition-duration: 334ms;
+}
+
+[scroll-delay="335"] {
+  transition-delay: 335ms;
+}
+
+[scroll-duration="335"] {
+  transition-duration: 335ms;
+}
+
+[scroll-delay="336"] {
+  transition-delay: 336ms;
+}
+
+[scroll-duration="336"] {
+  transition-duration: 336ms;
+}
+
+[scroll-delay="337"] {
+  transition-delay: 337ms;
+}
+
+[scroll-duration="337"] {
+  transition-duration: 337ms;
+}
+
+[scroll-delay="338"] {
+  transition-delay: 338ms;
+}
+
+[scroll-duration="338"] {
+  transition-duration: 338ms;
+}
+
+[scroll-delay="339"] {
+  transition-delay: 339ms;
+}
+
+[scroll-duration="339"] {
+  transition-duration: 339ms;
+}
+
+[scroll-delay="340"] {
+  transition-delay: 340ms;
+}
+
+[scroll-duration="340"] {
+  transition-duration: 340ms;
+}
+
+[scroll-delay="341"] {
+  transition-delay: 341ms;
+}
+
+[scroll-duration="341"] {
+  transition-duration: 341ms;
+}
+
+[scroll-delay="342"] {
+  transition-delay: 342ms;
+}
+
+[scroll-duration="342"] {
+  transition-duration: 342ms;
+}
+
+[scroll-delay="343"] {
+  transition-delay: 343ms;
+}
+
+[scroll-duration="343"] {
+  transition-duration: 343ms;
+}
+
+[scroll-delay="344"] {
+  transition-delay: 344ms;
+}
+
+[scroll-duration="344"] {
+  transition-duration: 344ms;
+}
+
+[scroll-delay="345"] {
+  transition-delay: 345ms;
+}
+
+[scroll-duration="345"] {
+  transition-duration: 345ms;
+}
+
+[scroll-delay="346"] {
+  transition-delay: 346ms;
+}
+
+[scroll-duration="346"] {
+  transition-duration: 346ms;
+}
+
+[scroll-delay="347"] {
+  transition-delay: 347ms;
+}
+
+[scroll-duration="347"] {
+  transition-duration: 347ms;
+}
+
+[scroll-delay="348"] {
+  transition-delay: 348ms;
+}
+
+[scroll-duration="348"] {
+  transition-duration: 348ms;
+}
+
+[scroll-delay="349"] {
+  transition-delay: 349ms;
+}
+
+[scroll-duration="349"] {
+  transition-duration: 349ms;
+}
+
+[scroll-delay="350"] {
+  transition-delay: 350ms;
+}
+
+[scroll-duration="350"] {
+  transition-duration: 350ms;
+}
+
+[scroll-delay="351"] {
+  transition-delay: 351ms;
+}
+
+[scroll-duration="351"] {
+  transition-duration: 351ms;
+}
+
+[scroll-delay="352"] {
+  transition-delay: 352ms;
+}
+
+[scroll-duration="352"] {
+  transition-duration: 352ms;
+}
+
+[scroll-delay="353"] {
+  transition-delay: 353ms;
+}
+
+[scroll-duration="353"] {
+  transition-duration: 353ms;
+}
+
+[scroll-delay="354"] {
+  transition-delay: 354ms;
+}
+
+[scroll-duration="354"] {
+  transition-duration: 354ms;
+}
+
+[scroll-delay="355"] {
+  transition-delay: 355ms;
+}
+
+[scroll-duration="355"] {
+  transition-duration: 355ms;
+}
+
+[scroll-delay="356"] {
+  transition-delay: 356ms;
+}
+
+[scroll-duration="356"] {
+  transition-duration: 356ms;
+}
+
+[scroll-delay="357"] {
+  transition-delay: 357ms;
+}
+
+[scroll-duration="357"] {
+  transition-duration: 357ms;
+}
+
+[scroll-delay="358"] {
+  transition-delay: 358ms;
+}
+
+[scroll-duration="358"] {
+  transition-duration: 358ms;
+}
+
+[scroll-delay="359"] {
+  transition-delay: 359ms;
+}
+
+[scroll-duration="359"] {
+  transition-duration: 359ms;
+}
+
+[scroll-delay="360"] {
+  transition-delay: 360ms;
+}
+
+[scroll-duration="360"] {
+  transition-duration: 360ms;
+}
+
+[scroll-delay="361"] {
+  transition-delay: 361ms;
+}
+
+[scroll-duration="361"] {
+  transition-duration: 361ms;
+}
+
+[scroll-delay="362"] {
+  transition-delay: 362ms;
+}
+
+[scroll-duration="362"] {
+  transition-duration: 362ms;
+}
+
+[scroll-delay="363"] {
+  transition-delay: 363ms;
+}
+
+[scroll-duration="363"] {
+  transition-duration: 363ms;
+}
+
+[scroll-delay="364"] {
+  transition-delay: 364ms;
+}
+
+[scroll-duration="364"] {
+  transition-duration: 364ms;
+}
+
+[scroll-delay="365"] {
+  transition-delay: 365ms;
+}
+
+[scroll-duration="365"] {
+  transition-duration: 365ms;
+}
+
+[scroll-delay="366"] {
+  transition-delay: 366ms;
+}
+
+[scroll-duration="366"] {
+  transition-duration: 366ms;
+}
+
+[scroll-delay="367"] {
+  transition-delay: 367ms;
+}
+
+[scroll-duration="367"] {
+  transition-duration: 367ms;
+}
+
+[scroll-delay="368"] {
+  transition-delay: 368ms;
+}
+
+[scroll-duration="368"] {
+  transition-duration: 368ms;
+}
+
+[scroll-delay="369"] {
+  transition-delay: 369ms;
+}
+
+[scroll-duration="369"] {
+  transition-duration: 369ms;
+}
+
+[scroll-delay="370"] {
+  transition-delay: 370ms;
+}
+
+[scroll-duration="370"] {
+  transition-duration: 370ms;
+}
+
+[scroll-delay="371"] {
+  transition-delay: 371ms;
+}
+
+[scroll-duration="371"] {
+  transition-duration: 371ms;
+}
+
+[scroll-delay="372"] {
+  transition-delay: 372ms;
+}
+
+[scroll-duration="372"] {
+  transition-duration: 372ms;
+}
+
+[scroll-delay="373"] {
+  transition-delay: 373ms;
+}
+
+[scroll-duration="373"] {
+  transition-duration: 373ms;
+}
+
+[scroll-delay="374"] {
+  transition-delay: 374ms;
+}
+
+[scroll-duration="374"] {
+  transition-duration: 374ms;
+}
+
+[scroll-delay="375"] {
+  transition-delay: 375ms;
+}
+
+[scroll-duration="375"] {
+  transition-duration: 375ms;
+}
+
+[scroll-delay="376"] {
+  transition-delay: 376ms;
+}
+
+[scroll-duration="376"] {
+  transition-duration: 376ms;
+}
+
+[scroll-delay="377"] {
+  transition-delay: 377ms;
+}
+
+[scroll-duration="377"] {
+  transition-duration: 377ms;
+}
+
+[scroll-delay="378"] {
+  transition-delay: 378ms;
+}
+
+[scroll-duration="378"] {
+  transition-duration: 378ms;
+}
+
+[scroll-delay="379"] {
+  transition-delay: 379ms;
+}
+
+[scroll-duration="379"] {
+  transition-duration: 379ms;
+}
+
+[scroll-delay="380"] {
+  transition-delay: 380ms;
+}
+
+[scroll-duration="380"] {
+  transition-duration: 380ms;
+}
+
+[scroll-delay="381"] {
+  transition-delay: 381ms;
+}
+
+[scroll-duration="381"] {
+  transition-duration: 381ms;
+}
+
+[scroll-delay="382"] {
+  transition-delay: 382ms;
+}
+
+[scroll-duration="382"] {
+  transition-duration: 382ms;
+}
+
+[scroll-delay="383"] {
+  transition-delay: 383ms;
+}
+
+[scroll-duration="383"] {
+  transition-duration: 383ms;
+}
+
+[scroll-delay="384"] {
+  transition-delay: 384ms;
+}
+
+[scroll-duration="384"] {
+  transition-duration: 384ms;
+}
+
+[scroll-delay="385"] {
+  transition-delay: 385ms;
+}
+
+[scroll-duration="385"] {
+  transition-duration: 385ms;
+}
+
+[scroll-delay="386"] {
+  transition-delay: 386ms;
+}
+
+[scroll-duration="386"] {
+  transition-duration: 386ms;
+}
+
+[scroll-delay="387"] {
+  transition-delay: 387ms;
+}
+
+[scroll-duration="387"] {
+  transition-duration: 387ms;
+}
+
+[scroll-delay="388"] {
+  transition-delay: 388ms;
+}
+
+[scroll-duration="388"] {
+  transition-duration: 388ms;
+}
+
+[scroll-delay="389"] {
+  transition-delay: 389ms;
+}
+
+[scroll-duration="389"] {
+  transition-duration: 389ms;
+}
+
+[scroll-delay="390"] {
+  transition-delay: 390ms;
+}
+
+[scroll-duration="390"] {
+  transition-duration: 390ms;
+}
+
+[scroll-delay="391"] {
+  transition-delay: 391ms;
+}
+
+[scroll-duration="391"] {
+  transition-duration: 391ms;
+}
+
+[scroll-delay="392"] {
+  transition-delay: 392ms;
+}
+
+[scroll-duration="392"] {
+  transition-duration: 392ms;
+}
+
+[scroll-delay="393"] {
+  transition-delay: 393ms;
+}
+
+[scroll-duration="393"] {
+  transition-duration: 393ms;
+}
+
+[scroll-delay="394"] {
+  transition-delay: 394ms;
+}
+
+[scroll-duration="394"] {
+  transition-duration: 394ms;
+}
+
+[scroll-delay="395"] {
+  transition-delay: 395ms;
+}
+
+[scroll-duration="395"] {
+  transition-duration: 395ms;
+}
+
+[scroll-delay="396"] {
+  transition-delay: 396ms;
+}
+
+[scroll-duration="396"] {
+  transition-duration: 396ms;
+}
+
+[scroll-delay="397"] {
+  transition-delay: 397ms;
+}
+
+[scroll-duration="397"] {
+  transition-duration: 397ms;
+}
+
+[scroll-delay="398"] {
+  transition-delay: 398ms;
+}
+
+[scroll-duration="398"] {
+  transition-duration: 398ms;
+}
+
+[scroll-delay="399"] {
+  transition-delay: 399ms;
+}
+
+[scroll-duration="399"] {
+  transition-duration: 399ms;
+}
+
+[scroll-delay="400"] {
+  transition-delay: 400ms;
+}
+
+[scroll-duration="400"] {
+  transition-duration: 400ms;
+}
+
+[scroll-delay="401"] {
+  transition-delay: 401ms;
+}
+
+[scroll-duration="401"] {
+  transition-duration: 401ms;
+}
+
+[scroll-delay="402"] {
+  transition-delay: 402ms;
+}
+
+[scroll-duration="402"] {
+  transition-duration: 402ms;
+}
+
+[scroll-delay="403"] {
+  transition-delay: 403ms;
+}
+
+[scroll-duration="403"] {
+  transition-duration: 403ms;
+}
+
+[scroll-delay="404"] {
+  transition-delay: 404ms;
+}
+
+[scroll-duration="404"] {
+  transition-duration: 404ms;
+}
+
+[scroll-delay="405"] {
+  transition-delay: 405ms;
+}
+
+[scroll-duration="405"] {
+  transition-duration: 405ms;
+}
+
+[scroll-delay="406"] {
+  transition-delay: 406ms;
+}
+
+[scroll-duration="406"] {
+  transition-duration: 406ms;
+}
+
+[scroll-delay="407"] {
+  transition-delay: 407ms;
+}
+
+[scroll-duration="407"] {
+  transition-duration: 407ms;
+}
+
+[scroll-delay="408"] {
+  transition-delay: 408ms;
+}
+
+[scroll-duration="408"] {
+  transition-duration: 408ms;
+}
+
+[scroll-delay="409"] {
+  transition-delay: 409ms;
+}
+
+[scroll-duration="409"] {
+  transition-duration: 409ms;
+}
+
+[scroll-delay="410"] {
+  transition-delay: 410ms;
+}
+
+[scroll-duration="410"] {
+  transition-duration: 410ms;
+}
+
+[scroll-delay="411"] {
+  transition-delay: 411ms;
+}
+
+[scroll-duration="411"] {
+  transition-duration: 411ms;
+}
+
+[scroll-delay="412"] {
+  transition-delay: 412ms;
+}
+
+[scroll-duration="412"] {
+  transition-duration: 412ms;
+}
+
+[scroll-delay="413"] {
+  transition-delay: 413ms;
+}
+
+[scroll-duration="413"] {
+  transition-duration: 413ms;
+}
+
+[scroll-delay="414"] {
+  transition-delay: 414ms;
+}
+
+[scroll-duration="414"] {
+  transition-duration: 414ms;
+}
+
+[scroll-delay="415"] {
+  transition-delay: 415ms;
+}
+
+[scroll-duration="415"] {
+  transition-duration: 415ms;
+}
+
+[scroll-delay="416"] {
+  transition-delay: 416ms;
+}
+
+[scroll-duration="416"] {
+  transition-duration: 416ms;
+}
+
+[scroll-delay="417"] {
+  transition-delay: 417ms;
+}
+
+[scroll-duration="417"] {
+  transition-duration: 417ms;
+}
+
+[scroll-delay="418"] {
+  transition-delay: 418ms;
+}
+
+[scroll-duration="418"] {
+  transition-duration: 418ms;
+}
+
+[scroll-delay="419"] {
+  transition-delay: 419ms;
+}
+
+[scroll-duration="419"] {
+  transition-duration: 419ms;
+}
+
+[scroll-delay="420"] {
+  transition-delay: 420ms;
+}
+
+[scroll-duration="420"] {
+  transition-duration: 420ms;
+}
+
+[scroll-delay="421"] {
+  transition-delay: 421ms;
+}
+
+[scroll-duration="421"] {
+  transition-duration: 421ms;
+}
+
+[scroll-delay="422"] {
+  transition-delay: 422ms;
+}
+
+[scroll-duration="422"] {
+  transition-duration: 422ms;
+}
+
+[scroll-delay="423"] {
+  transition-delay: 423ms;
+}
+
+[scroll-duration="423"] {
+  transition-duration: 423ms;
+}
+
+[scroll-delay="424"] {
+  transition-delay: 424ms;
+}
+
+[scroll-duration="424"] {
+  transition-duration: 424ms;
+}
+
+[scroll-delay="425"] {
+  transition-delay: 425ms;
+}
+
+[scroll-duration="425"] {
+  transition-duration: 425ms;
+}
+
+[scroll-delay="426"] {
+  transition-delay: 426ms;
+}
+
+[scroll-duration="426"] {
+  transition-duration: 426ms;
+}
+
+[scroll-delay="427"] {
+  transition-delay: 427ms;
+}
+
+[scroll-duration="427"] {
+  transition-duration: 427ms;
+}
+
+[scroll-delay="428"] {
+  transition-delay: 428ms;
+}
+
+[scroll-duration="428"] {
+  transition-duration: 428ms;
+}
+
+[scroll-delay="429"] {
+  transition-delay: 429ms;
+}
+
+[scroll-duration="429"] {
+  transition-duration: 429ms;
+}
+
+[scroll-delay="430"] {
+  transition-delay: 430ms;
+}
+
+[scroll-duration="430"] {
+  transition-duration: 430ms;
+}
+
+[scroll-delay="431"] {
+  transition-delay: 431ms;
+}
+
+[scroll-duration="431"] {
+  transition-duration: 431ms;
+}
+
+[scroll-delay="432"] {
+  transition-delay: 432ms;
+}
+
+[scroll-duration="432"] {
+  transition-duration: 432ms;
+}
+
+[scroll-delay="433"] {
+  transition-delay: 433ms;
+}
+
+[scroll-duration="433"] {
+  transition-duration: 433ms;
+}
+
+[scroll-delay="434"] {
+  transition-delay: 434ms;
+}
+
+[scroll-duration="434"] {
+  transition-duration: 434ms;
+}
+
+[scroll-delay="435"] {
+  transition-delay: 435ms;
+}
+
+[scroll-duration="435"] {
+  transition-duration: 435ms;
+}
+
+[scroll-delay="436"] {
+  transition-delay: 436ms;
+}
+
+[scroll-duration="436"] {
+  transition-duration: 436ms;
+}
+
+[scroll-delay="437"] {
+  transition-delay: 437ms;
+}
+
+[scroll-duration="437"] {
+  transition-duration: 437ms;
+}
+
+[scroll-delay="438"] {
+  transition-delay: 438ms;
+}
+
+[scroll-duration="438"] {
+  transition-duration: 438ms;
+}
+
+[scroll-delay="439"] {
+  transition-delay: 439ms;
+}
+
+[scroll-duration="439"] {
+  transition-duration: 439ms;
+}
+
+[scroll-delay="440"] {
+  transition-delay: 440ms;
+}
+
+[scroll-duration="440"] {
+  transition-duration: 440ms;
+}
+
+[scroll-delay="441"] {
+  transition-delay: 441ms;
+}
+
+[scroll-duration="441"] {
+  transition-duration: 441ms;
+}
+
+[scroll-delay="442"] {
+  transition-delay: 442ms;
+}
+
+[scroll-duration="442"] {
+  transition-duration: 442ms;
+}
+
+[scroll-delay="443"] {
+  transition-delay: 443ms;
+}
+
+[scroll-duration="443"] {
+  transition-duration: 443ms;
+}
+
+[scroll-delay="444"] {
+  transition-delay: 444ms;
+}
+
+[scroll-duration="444"] {
+  transition-duration: 444ms;
+}
+
+[scroll-delay="445"] {
+  transition-delay: 445ms;
+}
+
+[scroll-duration="445"] {
+  transition-duration: 445ms;
+}
+
+[scroll-delay="446"] {
+  transition-delay: 446ms;
+}
+
+[scroll-duration="446"] {
+  transition-duration: 446ms;
+}
+
+[scroll-delay="447"] {
+  transition-delay: 447ms;
+}
+
+[scroll-duration="447"] {
+  transition-duration: 447ms;
+}
+
+[scroll-delay="448"] {
+  transition-delay: 448ms;
+}
+
+[scroll-duration="448"] {
+  transition-duration: 448ms;
+}
+
+[scroll-delay="449"] {
+  transition-delay: 449ms;
+}
+
+[scroll-duration="449"] {
+  transition-duration: 449ms;
+}
+
+[scroll-delay="450"] {
+  transition-delay: 450ms;
+}
+
+[scroll-duration="450"] {
+  transition-duration: 450ms;
+}
+
+[scroll-delay="451"] {
+  transition-delay: 451ms;
+}
+
+[scroll-duration="451"] {
+  transition-duration: 451ms;
+}
+
+[scroll-delay="452"] {
+  transition-delay: 452ms;
+}
+
+[scroll-duration="452"] {
+  transition-duration: 452ms;
+}
+
+[scroll-delay="453"] {
+  transition-delay: 453ms;
+}
+
+[scroll-duration="453"] {
+  transition-duration: 453ms;
+}
+
+[scroll-delay="454"] {
+  transition-delay: 454ms;
+}
+
+[scroll-duration="454"] {
+  transition-duration: 454ms;
+}
+
+[scroll-delay="455"] {
+  transition-delay: 455ms;
+}
+
+[scroll-duration="455"] {
+  transition-duration: 455ms;
+}
+
+[scroll-delay="456"] {
+  transition-delay: 456ms;
+}
+
+[scroll-duration="456"] {
+  transition-duration: 456ms;
+}
+
+[scroll-delay="457"] {
+  transition-delay: 457ms;
+}
+
+[scroll-duration="457"] {
+  transition-duration: 457ms;
+}
+
+[scroll-delay="458"] {
+  transition-delay: 458ms;
+}
+
+[scroll-duration="458"] {
+  transition-duration: 458ms;
+}
+
+[scroll-delay="459"] {
+  transition-delay: 459ms;
+}
+
+[scroll-duration="459"] {
+  transition-duration: 459ms;
+}
+
+[scroll-delay="460"] {
+  transition-delay: 460ms;
+}
+
+[scroll-duration="460"] {
+  transition-duration: 460ms;
+}
+
+[scroll-delay="461"] {
+  transition-delay: 461ms;
+}
+
+[scroll-duration="461"] {
+  transition-duration: 461ms;
+}
+
+[scroll-delay="462"] {
+  transition-delay: 462ms;
+}
+
+[scroll-duration="462"] {
+  transition-duration: 462ms;
+}
+
+[scroll-delay="463"] {
+  transition-delay: 463ms;
+}
+
+[scroll-duration="463"] {
+  transition-duration: 463ms;
+}
+
+[scroll-delay="464"] {
+  transition-delay: 464ms;
+}
+
+[scroll-duration="464"] {
+  transition-duration: 464ms;
+}
+
+[scroll-delay="465"] {
+  transition-delay: 465ms;
+}
+
+[scroll-duration="465"] {
+  transition-duration: 465ms;
+}
+
+[scroll-delay="466"] {
+  transition-delay: 466ms;
+}
+
+[scroll-duration="466"] {
+  transition-duration: 466ms;
+}
+
+[scroll-delay="467"] {
+  transition-delay: 467ms;
+}
+
+[scroll-duration="467"] {
+  transition-duration: 467ms;
+}
+
+[scroll-delay="468"] {
+  transition-delay: 468ms;
+}
+
+[scroll-duration="468"] {
+  transition-duration: 468ms;
+}
+
+[scroll-delay="469"] {
+  transition-delay: 469ms;
+}
+
+[scroll-duration="469"] {
+  transition-duration: 469ms;
+}
+
+[scroll-delay="470"] {
+  transition-delay: 470ms;
+}
+
+[scroll-duration="470"] {
+  transition-duration: 470ms;
+}
+
+[scroll-delay="471"] {
+  transition-delay: 471ms;
+}
+
+[scroll-duration="471"] {
+  transition-duration: 471ms;
+}
+
+[scroll-delay="472"] {
+  transition-delay: 472ms;
+}
+
+[scroll-duration="472"] {
+  transition-duration: 472ms;
+}
+
+[scroll-delay="473"] {
+  transition-delay: 473ms;
+}
+
+[scroll-duration="473"] {
+  transition-duration: 473ms;
+}
+
+[scroll-delay="474"] {
+  transition-delay: 474ms;
+}
+
+[scroll-duration="474"] {
+  transition-duration: 474ms;
+}
+
+[scroll-delay="475"] {
+  transition-delay: 475ms;
+}
+
+[scroll-duration="475"] {
+  transition-duration: 475ms;
+}
+
+[scroll-delay="476"] {
+  transition-delay: 476ms;
+}
+
+[scroll-duration="476"] {
+  transition-duration: 476ms;
+}
+
+[scroll-delay="477"] {
+  transition-delay: 477ms;
+}
+
+[scroll-duration="477"] {
+  transition-duration: 477ms;
+}
+
+[scroll-delay="478"] {
+  transition-delay: 478ms;
+}
+
+[scroll-duration="478"] {
+  transition-duration: 478ms;
+}
+
+[scroll-delay="479"] {
+  transition-delay: 479ms;
+}
+
+[scroll-duration="479"] {
+  transition-duration: 479ms;
+}
+
+[scroll-delay="480"] {
+  transition-delay: 480ms;
+}
+
+[scroll-duration="480"] {
+  transition-duration: 480ms;
+}
+
+[scroll-delay="481"] {
+  transition-delay: 481ms;
+}
+
+[scroll-duration="481"] {
+  transition-duration: 481ms;
+}
+
+[scroll-delay="482"] {
+  transition-delay: 482ms;
+}
+
+[scroll-duration="482"] {
+  transition-duration: 482ms;
+}
+
+[scroll-delay="483"] {
+  transition-delay: 483ms;
+}
+
+[scroll-duration="483"] {
+  transition-duration: 483ms;
+}
+
+[scroll-delay="484"] {
+  transition-delay: 484ms;
+}
+
+[scroll-duration="484"] {
+  transition-duration: 484ms;
+}
+
+[scroll-delay="485"] {
+  transition-delay: 485ms;
+}
+
+[scroll-duration="485"] {
+  transition-duration: 485ms;
+}
+
+[scroll-delay="486"] {
+  transition-delay: 486ms;
+}
+
+[scroll-duration="486"] {
+  transition-duration: 486ms;
+}
+
+[scroll-delay="487"] {
+  transition-delay: 487ms;
+}
+
+[scroll-duration="487"] {
+  transition-duration: 487ms;
+}
+
+[scroll-delay="488"] {
+  transition-delay: 488ms;
+}
+
+[scroll-duration="488"] {
+  transition-duration: 488ms;
+}
+
+[scroll-delay="489"] {
+  transition-delay: 489ms;
+}
+
+[scroll-duration="489"] {
+  transition-duration: 489ms;
+}
+
+[scroll-delay="490"] {
+  transition-delay: 490ms;
+}
+
+[scroll-duration="490"] {
+  transition-duration: 490ms;
+}
+
+[scroll-delay="491"] {
+  transition-delay: 491ms;
+}
+
+[scroll-duration="491"] {
+  transition-duration: 491ms;
+}
+
+[scroll-delay="492"] {
+  transition-delay: 492ms;
+}
+
+[scroll-duration="492"] {
+  transition-duration: 492ms;
+}
+
+[scroll-delay="493"] {
+  transition-delay: 493ms;
+}
+
+[scroll-duration="493"] {
+  transition-duration: 493ms;
+}
+
+[scroll-delay="494"] {
+  transition-delay: 494ms;
+}
+
+[scroll-duration="494"] {
+  transition-duration: 494ms;
+}
+
+[scroll-delay="495"] {
+  transition-delay: 495ms;
+}
+
+[scroll-duration="495"] {
+  transition-duration: 495ms;
+}
+
+[scroll-delay="496"] {
+  transition-delay: 496ms;
+}
+
+[scroll-duration="496"] {
+  transition-duration: 496ms;
+}
+
+[scroll-delay="497"] {
+  transition-delay: 497ms;
+}
+
+[scroll-duration="497"] {
+  transition-duration: 497ms;
+}
+
+[scroll-delay="498"] {
+  transition-delay: 498ms;
+}
+
+[scroll-duration="498"] {
+  transition-duration: 498ms;
+}
+
+[scroll-delay="499"] {
+  transition-delay: 499ms;
+}
+
+[scroll-duration="499"] {
+  transition-duration: 499ms;
+}
+
+[scroll-delay="500"] {
+  transition-delay: 500ms;
+}
+
+[scroll-duration="500"] {
+  transition-duration: 500ms;
+}
+
+[scroll-delay="501"] {
+  transition-delay: 501ms;
+}
+
+[scroll-duration="501"] {
+  transition-duration: 501ms;
+}
+
+[scroll-delay="502"] {
+  transition-delay: 502ms;
+}
+
+[scroll-duration="502"] {
+  transition-duration: 502ms;
+}
+
+[scroll-delay="503"] {
+  transition-delay: 503ms;
+}
+
+[scroll-duration="503"] {
+  transition-duration: 503ms;
+}
+
+[scroll-delay="504"] {
+  transition-delay: 504ms;
+}
+
+[scroll-duration="504"] {
+  transition-duration: 504ms;
+}
+
+[scroll-delay="505"] {
+  transition-delay: 505ms;
+}
+
+[scroll-duration="505"] {
+  transition-duration: 505ms;
+}
+
+[scroll-delay="506"] {
+  transition-delay: 506ms;
+}
+
+[scroll-duration="506"] {
+  transition-duration: 506ms;
+}
+
+[scroll-delay="507"] {
+  transition-delay: 507ms;
+}
+
+[scroll-duration="507"] {
+  transition-duration: 507ms;
+}
+
+[scroll-delay="508"] {
+  transition-delay: 508ms;
+}
+
+[scroll-duration="508"] {
+  transition-duration: 508ms;
+}
+
+[scroll-delay="509"] {
+  transition-delay: 509ms;
+}
+
+[scroll-duration="509"] {
+  transition-duration: 509ms;
+}
+
+[scroll-delay="510"] {
+  transition-delay: 510ms;
+}
+
+[scroll-duration="510"] {
+  transition-duration: 510ms;
+}
+
+[scroll-delay="511"] {
+  transition-delay: 511ms;
+}
+
+[scroll-duration="511"] {
+  transition-duration: 511ms;
+}
+
+[scroll-delay="512"] {
+  transition-delay: 512ms;
+}
+
+[scroll-duration="512"] {
+  transition-duration: 512ms;
+}
+
+[scroll-delay="513"] {
+  transition-delay: 513ms;
+}
+
+[scroll-duration="513"] {
+  transition-duration: 513ms;
+}
+
+[scroll-delay="514"] {
+  transition-delay: 514ms;
+}
+
+[scroll-duration="514"] {
+  transition-duration: 514ms;
+}
+
+[scroll-delay="515"] {
+  transition-delay: 515ms;
+}
+
+[scroll-duration="515"] {
+  transition-duration: 515ms;
+}
+
+[scroll-delay="516"] {
+  transition-delay: 516ms;
+}
+
+[scroll-duration="516"] {
+  transition-duration: 516ms;
+}
+
+[scroll-delay="517"] {
+  transition-delay: 517ms;
+}
+
+[scroll-duration="517"] {
+  transition-duration: 517ms;
+}
+
+[scroll-delay="518"] {
+  transition-delay: 518ms;
+}
+
+[scroll-duration="518"] {
+  transition-duration: 518ms;
+}
+
+[scroll-delay="519"] {
+  transition-delay: 519ms;
+}
+
+[scroll-duration="519"] {
+  transition-duration: 519ms;
+}
+
+[scroll-delay="520"] {
+  transition-delay: 520ms;
+}
+
+[scroll-duration="520"] {
+  transition-duration: 520ms;
+}
+
+[scroll-delay="521"] {
+  transition-delay: 521ms;
+}
+
+[scroll-duration="521"] {
+  transition-duration: 521ms;
+}
+
+[scroll-delay="522"] {
+  transition-delay: 522ms;
+}
+
+[scroll-duration="522"] {
+  transition-duration: 522ms;
+}
+
+[scroll-delay="523"] {
+  transition-delay: 523ms;
+}
+
+[scroll-duration="523"] {
+  transition-duration: 523ms;
+}
+
+[scroll-delay="524"] {
+  transition-delay: 524ms;
+}
+
+[scroll-duration="524"] {
+  transition-duration: 524ms;
+}
+
+[scroll-delay="525"] {
+  transition-delay: 525ms;
+}
+
+[scroll-duration="525"] {
+  transition-duration: 525ms;
+}
+
+[scroll-delay="526"] {
+  transition-delay: 526ms;
+}
+
+[scroll-duration="526"] {
+  transition-duration: 526ms;
+}
+
+[scroll-delay="527"] {
+  transition-delay: 527ms;
+}
+
+[scroll-duration="527"] {
+  transition-duration: 527ms;
+}
+
+[scroll-delay="528"] {
+  transition-delay: 528ms;
+}
+
+[scroll-duration="528"] {
+  transition-duration: 528ms;
+}
+
+[scroll-delay="529"] {
+  transition-delay: 529ms;
+}
+
+[scroll-duration="529"] {
+  transition-duration: 529ms;
+}
+
+[scroll-delay="530"] {
+  transition-delay: 530ms;
+}
+
+[scroll-duration="530"] {
+  transition-duration: 530ms;
+}
+
+[scroll-delay="531"] {
+  transition-delay: 531ms;
+}
+
+[scroll-duration="531"] {
+  transition-duration: 531ms;
+}
+
+[scroll-delay="532"] {
+  transition-delay: 532ms;
+}
+
+[scroll-duration="532"] {
+  transition-duration: 532ms;
+}
+
+[scroll-delay="533"] {
+  transition-delay: 533ms;
+}
+
+[scroll-duration="533"] {
+  transition-duration: 533ms;
+}
+
+[scroll-delay="534"] {
+  transition-delay: 534ms;
+}
+
+[scroll-duration="534"] {
+  transition-duration: 534ms;
+}
+
+[scroll-delay="535"] {
+  transition-delay: 535ms;
+}
+
+[scroll-duration="535"] {
+  transition-duration: 535ms;
+}
+
+[scroll-delay="536"] {
+  transition-delay: 536ms;
+}
+
+[scroll-duration="536"] {
+  transition-duration: 536ms;
+}
+
+[scroll-delay="537"] {
+  transition-delay: 537ms;
+}
+
+[scroll-duration="537"] {
+  transition-duration: 537ms;
+}
+
+[scroll-delay="538"] {
+  transition-delay: 538ms;
+}
+
+[scroll-duration="538"] {
+  transition-duration: 538ms;
+}
+
+[scroll-delay="539"] {
+  transition-delay: 539ms;
+}
+
+[scroll-duration="539"] {
+  transition-duration: 539ms;
+}
+
+[scroll-delay="540"] {
+  transition-delay: 540ms;
+}
+
+[scroll-duration="540"] {
+  transition-duration: 540ms;
+}
+
+[scroll-delay="541"] {
+  transition-delay: 541ms;
+}
+
+[scroll-duration="541"] {
+  transition-duration: 541ms;
+}
+
+[scroll-delay="542"] {
+  transition-delay: 542ms;
+}
+
+[scroll-duration="542"] {
+  transition-duration: 542ms;
+}
+
+[scroll-delay="543"] {
+  transition-delay: 543ms;
+}
+
+[scroll-duration="543"] {
+  transition-duration: 543ms;
+}
+
+[scroll-delay="544"] {
+  transition-delay: 544ms;
+}
+
+[scroll-duration="544"] {
+  transition-duration: 544ms;
+}
+
+[scroll-delay="545"] {
+  transition-delay: 545ms;
+}
+
+[scroll-duration="545"] {
+  transition-duration: 545ms;
+}
+
+[scroll-delay="546"] {
+  transition-delay: 546ms;
+}
+
+[scroll-duration="546"] {
+  transition-duration: 546ms;
+}
+
+[scroll-delay="547"] {
+  transition-delay: 547ms;
+}
+
+[scroll-duration="547"] {
+  transition-duration: 547ms;
+}
+
+[scroll-delay="548"] {
+  transition-delay: 548ms;
+}
+
+[scroll-duration="548"] {
+  transition-duration: 548ms;
+}
+
+[scroll-delay="549"] {
+  transition-delay: 549ms;
+}
+
+[scroll-duration="549"] {
+  transition-duration: 549ms;
+}
+
+[scroll-delay="550"] {
+  transition-delay: 550ms;
+}
+
+[scroll-duration="550"] {
+  transition-duration: 550ms;
+}
+
+[scroll-delay="551"] {
+  transition-delay: 551ms;
+}
+
+[scroll-duration="551"] {
+  transition-duration: 551ms;
+}
+
+[scroll-delay="552"] {
+  transition-delay: 552ms;
+}
+
+[scroll-duration="552"] {
+  transition-duration: 552ms;
+}
+
+[scroll-delay="553"] {
+  transition-delay: 553ms;
+}
+
+[scroll-duration="553"] {
+  transition-duration: 553ms;
+}
+
+[scroll-delay="554"] {
+  transition-delay: 554ms;
+}
+
+[scroll-duration="554"] {
+  transition-duration: 554ms;
+}
+
+[scroll-delay="555"] {
+  transition-delay: 555ms;
+}
+
+[scroll-duration="555"] {
+  transition-duration: 555ms;
+}
+
+[scroll-delay="556"] {
+  transition-delay: 556ms;
+}
+
+[scroll-duration="556"] {
+  transition-duration: 556ms;
+}
+
+[scroll-delay="557"] {
+  transition-delay: 557ms;
+}
+
+[scroll-duration="557"] {
+  transition-duration: 557ms;
+}
+
+[scroll-delay="558"] {
+  transition-delay: 558ms;
+}
+
+[scroll-duration="558"] {
+  transition-duration: 558ms;
+}
+
+[scroll-delay="559"] {
+  transition-delay: 559ms;
+}
+
+[scroll-duration="559"] {
+  transition-duration: 559ms;
+}
+
+[scroll-delay="560"] {
+  transition-delay: 560ms;
+}
+
+[scroll-duration="560"] {
+  transition-duration: 560ms;
+}
+
+[scroll-delay="561"] {
+  transition-delay: 561ms;
+}
+
+[scroll-duration="561"] {
+  transition-duration: 561ms;
+}
+
+[scroll-delay="562"] {
+  transition-delay: 562ms;
+}
+
+[scroll-duration="562"] {
+  transition-duration: 562ms;
+}
+
+[scroll-delay="563"] {
+  transition-delay: 563ms;
+}
+
+[scroll-duration="563"] {
+  transition-duration: 563ms;
+}
+
+[scroll-delay="564"] {
+  transition-delay: 564ms;
+}
+
+[scroll-duration="564"] {
+  transition-duration: 564ms;
+}
+
+[scroll-delay="565"] {
+  transition-delay: 565ms;
+}
+
+[scroll-duration="565"] {
+  transition-duration: 565ms;
+}
+
+[scroll-delay="566"] {
+  transition-delay: 566ms;
+}
+
+[scroll-duration="566"] {
+  transition-duration: 566ms;
+}
+
+[scroll-delay="567"] {
+  transition-delay: 567ms;
+}
+
+[scroll-duration="567"] {
+  transition-duration: 567ms;
+}
+
+[scroll-delay="568"] {
+  transition-delay: 568ms;
+}
+
+[scroll-duration="568"] {
+  transition-duration: 568ms;
+}
+
+[scroll-delay="569"] {
+  transition-delay: 569ms;
+}
+
+[scroll-duration="569"] {
+  transition-duration: 569ms;
+}
+
+[scroll-delay="570"] {
+  transition-delay: 570ms;
+}
+
+[scroll-duration="570"] {
+  transition-duration: 570ms;
+}
+
+[scroll-delay="571"] {
+  transition-delay: 571ms;
+}
+
+[scroll-duration="571"] {
+  transition-duration: 571ms;
+}
+
+[scroll-delay="572"] {
+  transition-delay: 572ms;
+}
+
+[scroll-duration="572"] {
+  transition-duration: 572ms;
+}
+
+[scroll-delay="573"] {
+  transition-delay: 573ms;
+}
+
+[scroll-duration="573"] {
+  transition-duration: 573ms;
+}
+
+[scroll-delay="574"] {
+  transition-delay: 574ms;
+}
+
+[scroll-duration="574"] {
+  transition-duration: 574ms;
+}
+
+[scroll-delay="575"] {
+  transition-delay: 575ms;
+}
+
+[scroll-duration="575"] {
+  transition-duration: 575ms;
+}
+
+[scroll-delay="576"] {
+  transition-delay: 576ms;
+}
+
+[scroll-duration="576"] {
+  transition-duration: 576ms;
+}
+
+[scroll-delay="577"] {
+  transition-delay: 577ms;
+}
+
+[scroll-duration="577"] {
+  transition-duration: 577ms;
+}
+
+[scroll-delay="578"] {
+  transition-delay: 578ms;
+}
+
+[scroll-duration="578"] {
+  transition-duration: 578ms;
+}
+
+[scroll-delay="579"] {
+  transition-delay: 579ms;
+}
+
+[scroll-duration="579"] {
+  transition-duration: 579ms;
+}
+
+[scroll-delay="580"] {
+  transition-delay: 580ms;
+}
+
+[scroll-duration="580"] {
+  transition-duration: 580ms;
+}
+
+[scroll-delay="581"] {
+  transition-delay: 581ms;
+}
+
+[scroll-duration="581"] {
+  transition-duration: 581ms;
+}
+
+[scroll-delay="582"] {
+  transition-delay: 582ms;
+}
+
+[scroll-duration="582"] {
+  transition-duration: 582ms;
+}
+
+[scroll-delay="583"] {
+  transition-delay: 583ms;
+}
+
+[scroll-duration="583"] {
+  transition-duration: 583ms;
+}
+
+[scroll-delay="584"] {
+  transition-delay: 584ms;
+}
+
+[scroll-duration="584"] {
+  transition-duration: 584ms;
+}
+
+[scroll-delay="585"] {
+  transition-delay: 585ms;
+}
+
+[scroll-duration="585"] {
+  transition-duration: 585ms;
+}
+
+[scroll-delay="586"] {
+  transition-delay: 586ms;
+}
+
+[scroll-duration="586"] {
+  transition-duration: 586ms;
+}
+
+[scroll-delay="587"] {
+  transition-delay: 587ms;
+}
+
+[scroll-duration="587"] {
+  transition-duration: 587ms;
+}
+
+[scroll-delay="588"] {
+  transition-delay: 588ms;
+}
+
+[scroll-duration="588"] {
+  transition-duration: 588ms;
+}
+
+[scroll-delay="589"] {
+  transition-delay: 589ms;
+}
+
+[scroll-duration="589"] {
+  transition-duration: 589ms;
+}
+
+[scroll-delay="590"] {
+  transition-delay: 590ms;
+}
+
+[scroll-duration="590"] {
+  transition-duration: 590ms;
+}
+
+[scroll-delay="591"] {
+  transition-delay: 591ms;
+}
+
+[scroll-duration="591"] {
+  transition-duration: 591ms;
+}
+
+[scroll-delay="592"] {
+  transition-delay: 592ms;
+}
+
+[scroll-duration="592"] {
+  transition-duration: 592ms;
+}
+
+[scroll-delay="593"] {
+  transition-delay: 593ms;
+}
+
+[scroll-duration="593"] {
+  transition-duration: 593ms;
+}
+
+[scroll-delay="594"] {
+  transition-delay: 594ms;
+}
+
+[scroll-duration="594"] {
+  transition-duration: 594ms;
+}
+
+[scroll-delay="595"] {
+  transition-delay: 595ms;
+}
+
+[scroll-duration="595"] {
+  transition-duration: 595ms;
+}
+
+[scroll-delay="596"] {
+  transition-delay: 596ms;
+}
+
+[scroll-duration="596"] {
+  transition-duration: 596ms;
+}
+
+[scroll-delay="597"] {
+  transition-delay: 597ms;
+}
+
+[scroll-duration="597"] {
+  transition-duration: 597ms;
+}
+
+[scroll-delay="598"] {
+  transition-delay: 598ms;
+}
+
+[scroll-duration="598"] {
+  transition-duration: 598ms;
+}
+
+[scroll-delay="599"] {
+  transition-delay: 599ms;
+}
+
+[scroll-duration="599"] {
+  transition-duration: 599ms;
+}
+
+[scroll-delay="600"] {
+  transition-delay: 600ms;
+}
+
+[scroll-duration="600"] {
+  transition-duration: 600ms;
+}
+
+[scroll-delay="601"] {
+  transition-delay: 601ms;
+}
+
+[scroll-duration="601"] {
+  transition-duration: 601ms;
+}
+
+[scroll-delay="602"] {
+  transition-delay: 602ms;
+}
+
+[scroll-duration="602"] {
+  transition-duration: 602ms;
+}
+
+[scroll-delay="603"] {
+  transition-delay: 603ms;
+}
+
+[scroll-duration="603"] {
+  transition-duration: 603ms;
+}
+
+[scroll-delay="604"] {
+  transition-delay: 604ms;
+}
+
+[scroll-duration="604"] {
+  transition-duration: 604ms;
+}
+
+[scroll-delay="605"] {
+  transition-delay: 605ms;
+}
+
+[scroll-duration="605"] {
+  transition-duration: 605ms;
+}
+
+[scroll-delay="606"] {
+  transition-delay: 606ms;
+}
+
+[scroll-duration="606"] {
+  transition-duration: 606ms;
+}
+
+[scroll-delay="607"] {
+  transition-delay: 607ms;
+}
+
+[scroll-duration="607"] {
+  transition-duration: 607ms;
+}
+
+[scroll-delay="608"] {
+  transition-delay: 608ms;
+}
+
+[scroll-duration="608"] {
+  transition-duration: 608ms;
+}
+
+[scroll-delay="609"] {
+  transition-delay: 609ms;
+}
+
+[scroll-duration="609"] {
+  transition-duration: 609ms;
+}
+
+[scroll-delay="610"] {
+  transition-delay: 610ms;
+}
+
+[scroll-duration="610"] {
+  transition-duration: 610ms;
+}
+
+[scroll-delay="611"] {
+  transition-delay: 611ms;
+}
+
+[scroll-duration="611"] {
+  transition-duration: 611ms;
+}
+
+[scroll-delay="612"] {
+  transition-delay: 612ms;
+}
+
+[scroll-duration="612"] {
+  transition-duration: 612ms;
+}
+
+[scroll-delay="613"] {
+  transition-delay: 613ms;
+}
+
+[scroll-duration="613"] {
+  transition-duration: 613ms;
+}
+
+[scroll-delay="614"] {
+  transition-delay: 614ms;
+}
+
+[scroll-duration="614"] {
+  transition-duration: 614ms;
+}
+
+[scroll-delay="615"] {
+  transition-delay: 615ms;
+}
+
+[scroll-duration="615"] {
+  transition-duration: 615ms;
+}
+
+[scroll-delay="616"] {
+  transition-delay: 616ms;
+}
+
+[scroll-duration="616"] {
+  transition-duration: 616ms;
+}
+
+[scroll-delay="617"] {
+  transition-delay: 617ms;
+}
+
+[scroll-duration="617"] {
+  transition-duration: 617ms;
+}
+
+[scroll-delay="618"] {
+  transition-delay: 618ms;
+}
+
+[scroll-duration="618"] {
+  transition-duration: 618ms;
+}
+
+[scroll-delay="619"] {
+  transition-delay: 619ms;
+}
+
+[scroll-duration="619"] {
+  transition-duration: 619ms;
+}
+
+[scroll-delay="620"] {
+  transition-delay: 620ms;
+}
+
+[scroll-duration="620"] {
+  transition-duration: 620ms;
+}
+
+[scroll-delay="621"] {
+  transition-delay: 621ms;
+}
+
+[scroll-duration="621"] {
+  transition-duration: 621ms;
+}
+
+[scroll-delay="622"] {
+  transition-delay: 622ms;
+}
+
+[scroll-duration="622"] {
+  transition-duration: 622ms;
+}
+
+[scroll-delay="623"] {
+  transition-delay: 623ms;
+}
+
+[scroll-duration="623"] {
+  transition-duration: 623ms;
+}
+
+[scroll-delay="624"] {
+  transition-delay: 624ms;
+}
+
+[scroll-duration="624"] {
+  transition-duration: 624ms;
+}
+
+[scroll-delay="625"] {
+  transition-delay: 625ms;
+}
+
+[scroll-duration="625"] {
+  transition-duration: 625ms;
+}
+
+[scroll-delay="626"] {
+  transition-delay: 626ms;
+}
+
+[scroll-duration="626"] {
+  transition-duration: 626ms;
+}
+
+[scroll-delay="627"] {
+  transition-delay: 627ms;
+}
+
+[scroll-duration="627"] {
+  transition-duration: 627ms;
+}
+
+[scroll-delay="628"] {
+  transition-delay: 628ms;
+}
+
+[scroll-duration="628"] {
+  transition-duration: 628ms;
+}
+
+[scroll-delay="629"] {
+  transition-delay: 629ms;
+}
+
+[scroll-duration="629"] {
+  transition-duration: 629ms;
+}
+
+[scroll-delay="630"] {
+  transition-delay: 630ms;
+}
+
+[scroll-duration="630"] {
+  transition-duration: 630ms;
+}
+
+[scroll-delay="631"] {
+  transition-delay: 631ms;
+}
+
+[scroll-duration="631"] {
+  transition-duration: 631ms;
+}
+
+[scroll-delay="632"] {
+  transition-delay: 632ms;
+}
+
+[scroll-duration="632"] {
+  transition-duration: 632ms;
+}
+
+[scroll-delay="633"] {
+  transition-delay: 633ms;
+}
+
+[scroll-duration="633"] {
+  transition-duration: 633ms;
+}
+
+[scroll-delay="634"] {
+  transition-delay: 634ms;
+}
+
+[scroll-duration="634"] {
+  transition-duration: 634ms;
+}
+
+[scroll-delay="635"] {
+  transition-delay: 635ms;
+}
+
+[scroll-duration="635"] {
+  transition-duration: 635ms;
+}
+
+[scroll-delay="636"] {
+  transition-delay: 636ms;
+}
+
+[scroll-duration="636"] {
+  transition-duration: 636ms;
+}
+
+[scroll-delay="637"] {
+  transition-delay: 637ms;
+}
+
+[scroll-duration="637"] {
+  transition-duration: 637ms;
+}
+
+[scroll-delay="638"] {
+  transition-delay: 638ms;
+}
+
+[scroll-duration="638"] {
+  transition-duration: 638ms;
+}
+
+[scroll-delay="639"] {
+  transition-delay: 639ms;
+}
+
+[scroll-duration="639"] {
+  transition-duration: 639ms;
+}
+
+[scroll-delay="640"] {
+  transition-delay: 640ms;
+}
+
+[scroll-duration="640"] {
+  transition-duration: 640ms;
+}
+
+[scroll-delay="641"] {
+  transition-delay: 641ms;
+}
+
+[scroll-duration="641"] {
+  transition-duration: 641ms;
+}
+
+[scroll-delay="642"] {
+  transition-delay: 642ms;
+}
+
+[scroll-duration="642"] {
+  transition-duration: 642ms;
+}
+
+[scroll-delay="643"] {
+  transition-delay: 643ms;
+}
+
+[scroll-duration="643"] {
+  transition-duration: 643ms;
+}
+
+[scroll-delay="644"] {
+  transition-delay: 644ms;
+}
+
+[scroll-duration="644"] {
+  transition-duration: 644ms;
+}
+
+[scroll-delay="645"] {
+  transition-delay: 645ms;
+}
+
+[scroll-duration="645"] {
+  transition-duration: 645ms;
+}
+
+[scroll-delay="646"] {
+  transition-delay: 646ms;
+}
+
+[scroll-duration="646"] {
+  transition-duration: 646ms;
+}
+
+[scroll-delay="647"] {
+  transition-delay: 647ms;
+}
+
+[scroll-duration="647"] {
+  transition-duration: 647ms;
+}
+
+[scroll-delay="648"] {
+  transition-delay: 648ms;
+}
+
+[scroll-duration="648"] {
+  transition-duration: 648ms;
+}
+
+[scroll-delay="649"] {
+  transition-delay: 649ms;
+}
+
+[scroll-duration="649"] {
+  transition-duration: 649ms;
+}
+
+[scroll-delay="650"] {
+  transition-delay: 650ms;
+}
+
+[scroll-duration="650"] {
+  transition-duration: 650ms;
+}
+
+[scroll-delay="651"] {
+  transition-delay: 651ms;
+}
+
+[scroll-duration="651"] {
+  transition-duration: 651ms;
+}
+
+[scroll-delay="652"] {
+  transition-delay: 652ms;
+}
+
+[scroll-duration="652"] {
+  transition-duration: 652ms;
+}
+
+[scroll-delay="653"] {
+  transition-delay: 653ms;
+}
+
+[scroll-duration="653"] {
+  transition-duration: 653ms;
+}
+
+[scroll-delay="654"] {
+  transition-delay: 654ms;
+}
+
+[scroll-duration="654"] {
+  transition-duration: 654ms;
+}
+
+[scroll-delay="655"] {
+  transition-delay: 655ms;
+}
+
+[scroll-duration="655"] {
+  transition-duration: 655ms;
+}
+
+[scroll-delay="656"] {
+  transition-delay: 656ms;
+}
+
+[scroll-duration="656"] {
+  transition-duration: 656ms;
+}
+
+[scroll-delay="657"] {
+  transition-delay: 657ms;
+}
+
+[scroll-duration="657"] {
+  transition-duration: 657ms;
+}
+
+[scroll-delay="658"] {
+  transition-delay: 658ms;
+}
+
+[scroll-duration="658"] {
+  transition-duration: 658ms;
+}
+
+[scroll-delay="659"] {
+  transition-delay: 659ms;
+}
+
+[scroll-duration="659"] {
+  transition-duration: 659ms;
+}
+
+[scroll-delay="660"] {
+  transition-delay: 660ms;
+}
+
+[scroll-duration="660"] {
+  transition-duration: 660ms;
+}
+
+[scroll-delay="661"] {
+  transition-delay: 661ms;
+}
+
+[scroll-duration="661"] {
+  transition-duration: 661ms;
+}
+
+[scroll-delay="662"] {
+  transition-delay: 662ms;
+}
+
+[scroll-duration="662"] {
+  transition-duration: 662ms;
+}
+
+[scroll-delay="663"] {
+  transition-delay: 663ms;
+}
+
+[scroll-duration="663"] {
+  transition-duration: 663ms;
+}
+
+[scroll-delay="664"] {
+  transition-delay: 664ms;
+}
+
+[scroll-duration="664"] {
+  transition-duration: 664ms;
+}
+
+[scroll-delay="665"] {
+  transition-delay: 665ms;
+}
+
+[scroll-duration="665"] {
+  transition-duration: 665ms;
+}
+
+[scroll-delay="666"] {
+  transition-delay: 666ms;
+}
+
+[scroll-duration="666"] {
+  transition-duration: 666ms;
+}
+
+[scroll-delay="667"] {
+  transition-delay: 667ms;
+}
+
+[scroll-duration="667"] {
+  transition-duration: 667ms;
+}
+
+[scroll-delay="668"] {
+  transition-delay: 668ms;
+}
+
+[scroll-duration="668"] {
+  transition-duration: 668ms;
+}
+
+[scroll-delay="669"] {
+  transition-delay: 669ms;
+}
+
+[scroll-duration="669"] {
+  transition-duration: 669ms;
+}
+
+[scroll-delay="670"] {
+  transition-delay: 670ms;
+}
+
+[scroll-duration="670"] {
+  transition-duration: 670ms;
+}
+
+[scroll-delay="671"] {
+  transition-delay: 671ms;
+}
+
+[scroll-duration="671"] {
+  transition-duration: 671ms;
+}
+
+[scroll-delay="672"] {
+  transition-delay: 672ms;
+}
+
+[scroll-duration="672"] {
+  transition-duration: 672ms;
+}
+
+[scroll-delay="673"] {
+  transition-delay: 673ms;
+}
+
+[scroll-duration="673"] {
+  transition-duration: 673ms;
+}
+
+[scroll-delay="674"] {
+  transition-delay: 674ms;
+}
+
+[scroll-duration="674"] {
+  transition-duration: 674ms;
+}
+
+[scroll-delay="675"] {
+  transition-delay: 675ms;
+}
+
+[scroll-duration="675"] {
+  transition-duration: 675ms;
+}
+
+[scroll-delay="676"] {
+  transition-delay: 676ms;
+}
+
+[scroll-duration="676"] {
+  transition-duration: 676ms;
+}
+
+[scroll-delay="677"] {
+  transition-delay: 677ms;
+}
+
+[scroll-duration="677"] {
+  transition-duration: 677ms;
+}
+
+[scroll-delay="678"] {
+  transition-delay: 678ms;
+}
+
+[scroll-duration="678"] {
+  transition-duration: 678ms;
+}
+
+[scroll-delay="679"] {
+  transition-delay: 679ms;
+}
+
+[scroll-duration="679"] {
+  transition-duration: 679ms;
+}
+
+[scroll-delay="680"] {
+  transition-delay: 680ms;
+}
+
+[scroll-duration="680"] {
+  transition-duration: 680ms;
+}
+
+[scroll-delay="681"] {
+  transition-delay: 681ms;
+}
+
+[scroll-duration="681"] {
+  transition-duration: 681ms;
+}
+
+[scroll-delay="682"] {
+  transition-delay: 682ms;
+}
+
+[scroll-duration="682"] {
+  transition-duration: 682ms;
+}
+
+[scroll-delay="683"] {
+  transition-delay: 683ms;
+}
+
+[scroll-duration="683"] {
+  transition-duration: 683ms;
+}
+
+[scroll-delay="684"] {
+  transition-delay: 684ms;
+}
+
+[scroll-duration="684"] {
+  transition-duration: 684ms;
+}
+
+[scroll-delay="685"] {
+  transition-delay: 685ms;
+}
+
+[scroll-duration="685"] {
+  transition-duration: 685ms;
+}
+
+[scroll-delay="686"] {
+  transition-delay: 686ms;
+}
+
+[scroll-duration="686"] {
+  transition-duration: 686ms;
+}
+
+[scroll-delay="687"] {
+  transition-delay: 687ms;
+}
+
+[scroll-duration="687"] {
+  transition-duration: 687ms;
+}
+
+[scroll-delay="688"] {
+  transition-delay: 688ms;
+}
+
+[scroll-duration="688"] {
+  transition-duration: 688ms;
+}
+
+[scroll-delay="689"] {
+  transition-delay: 689ms;
+}
+
+[scroll-duration="689"] {
+  transition-duration: 689ms;
+}
+
+[scroll-delay="690"] {
+  transition-delay: 690ms;
+}
+
+[scroll-duration="690"] {
+  transition-duration: 690ms;
+}
+
+[scroll-delay="691"] {
+  transition-delay: 691ms;
+}
+
+[scroll-duration="691"] {
+  transition-duration: 691ms;
+}
+
+[scroll-delay="692"] {
+  transition-delay: 692ms;
+}
+
+[scroll-duration="692"] {
+  transition-duration: 692ms;
+}
+
+[scroll-delay="693"] {
+  transition-delay: 693ms;
+}
+
+[scroll-duration="693"] {
+  transition-duration: 693ms;
+}
+
+[scroll-delay="694"] {
+  transition-delay: 694ms;
+}
+
+[scroll-duration="694"] {
+  transition-duration: 694ms;
+}
+
+[scroll-delay="695"] {
+  transition-delay: 695ms;
+}
+
+[scroll-duration="695"] {
+  transition-duration: 695ms;
+}
+
+[scroll-delay="696"] {
+  transition-delay: 696ms;
+}
+
+[scroll-duration="696"] {
+  transition-duration: 696ms;
+}
+
+[scroll-delay="697"] {
+  transition-delay: 697ms;
+}
+
+[scroll-duration="697"] {
+  transition-duration: 697ms;
+}
+
+[scroll-delay="698"] {
+  transition-delay: 698ms;
+}
+
+[scroll-duration="698"] {
+  transition-duration: 698ms;
+}
+
+[scroll-delay="699"] {
+  transition-delay: 699ms;
+}
+
+[scroll-duration="699"] {
+  transition-duration: 699ms;
+}
+
+[scroll-delay="700"] {
+  transition-delay: 700ms;
+}
+
+[scroll-duration="700"] {
+  transition-duration: 700ms;
+}
+
+[scroll-delay="701"] {
+  transition-delay: 701ms;
+}
+
+[scroll-duration="701"] {
+  transition-duration: 701ms;
+}
+
+[scroll-delay="702"] {
+  transition-delay: 702ms;
+}
+
+[scroll-duration="702"] {
+  transition-duration: 702ms;
+}
+
+[scroll-delay="703"] {
+  transition-delay: 703ms;
+}
+
+[scroll-duration="703"] {
+  transition-duration: 703ms;
+}
+
+[scroll-delay="704"] {
+  transition-delay: 704ms;
+}
+
+[scroll-duration="704"] {
+  transition-duration: 704ms;
+}
+
+[scroll-delay="705"] {
+  transition-delay: 705ms;
+}
+
+[scroll-duration="705"] {
+  transition-duration: 705ms;
+}
+
+[scroll-delay="706"] {
+  transition-delay: 706ms;
+}
+
+[scroll-duration="706"] {
+  transition-duration: 706ms;
+}
+
+[scroll-delay="707"] {
+  transition-delay: 707ms;
+}
+
+[scroll-duration="707"] {
+  transition-duration: 707ms;
+}
+
+[scroll-delay="708"] {
+  transition-delay: 708ms;
+}
+
+[scroll-duration="708"] {
+  transition-duration: 708ms;
+}
+
+[scroll-delay="709"] {
+  transition-delay: 709ms;
+}
+
+[scroll-duration="709"] {
+  transition-duration: 709ms;
+}
+
+[scroll-delay="710"] {
+  transition-delay: 710ms;
+}
+
+[scroll-duration="710"] {
+  transition-duration: 710ms;
+}
+
+[scroll-delay="711"] {
+  transition-delay: 711ms;
+}
+
+[scroll-duration="711"] {
+  transition-duration: 711ms;
+}
+
+[scroll-delay="712"] {
+  transition-delay: 712ms;
+}
+
+[scroll-duration="712"] {
+  transition-duration: 712ms;
+}
+
+[scroll-delay="713"] {
+  transition-delay: 713ms;
+}
+
+[scroll-duration="713"] {
+  transition-duration: 713ms;
+}
+
+[scroll-delay="714"] {
+  transition-delay: 714ms;
+}
+
+[scroll-duration="714"] {
+  transition-duration: 714ms;
+}
+
+[scroll-delay="715"] {
+  transition-delay: 715ms;
+}
+
+[scroll-duration="715"] {
+  transition-duration: 715ms;
+}
+
+[scroll-delay="716"] {
+  transition-delay: 716ms;
+}
+
+[scroll-duration="716"] {
+  transition-duration: 716ms;
+}
+
+[scroll-delay="717"] {
+  transition-delay: 717ms;
+}
+
+[scroll-duration="717"] {
+  transition-duration: 717ms;
+}
+
+[scroll-delay="718"] {
+  transition-delay: 718ms;
+}
+
+[scroll-duration="718"] {
+  transition-duration: 718ms;
+}
+
+[scroll-delay="719"] {
+  transition-delay: 719ms;
+}
+
+[scroll-duration="719"] {
+  transition-duration: 719ms;
+}
+
+[scroll-delay="720"] {
+  transition-delay: 720ms;
+}
+
+[scroll-duration="720"] {
+  transition-duration: 720ms;
+}
+
+[scroll-delay="721"] {
+  transition-delay: 721ms;
+}
+
+[scroll-duration="721"] {
+  transition-duration: 721ms;
+}
+
+[scroll-delay="722"] {
+  transition-delay: 722ms;
+}
+
+[scroll-duration="722"] {
+  transition-duration: 722ms;
+}
+
+[scroll-delay="723"] {
+  transition-delay: 723ms;
+}
+
+[scroll-duration="723"] {
+  transition-duration: 723ms;
+}
+
+[scroll-delay="724"] {
+  transition-delay: 724ms;
+}
+
+[scroll-duration="724"] {
+  transition-duration: 724ms;
+}
+
+[scroll-delay="725"] {
+  transition-delay: 725ms;
+}
+
+[scroll-duration="725"] {
+  transition-duration: 725ms;
+}
+
+[scroll-delay="726"] {
+  transition-delay: 726ms;
+}
+
+[scroll-duration="726"] {
+  transition-duration: 726ms;
+}
+
+[scroll-delay="727"] {
+  transition-delay: 727ms;
+}
+
+[scroll-duration="727"] {
+  transition-duration: 727ms;
+}
+
+[scroll-delay="728"] {
+  transition-delay: 728ms;
+}
+
+[scroll-duration="728"] {
+  transition-duration: 728ms;
+}
+
+[scroll-delay="729"] {
+  transition-delay: 729ms;
+}
+
+[scroll-duration="729"] {
+  transition-duration: 729ms;
+}
+
+[scroll-delay="730"] {
+  transition-delay: 730ms;
+}
+
+[scroll-duration="730"] {
+  transition-duration: 730ms;
+}
+
+[scroll-delay="731"] {
+  transition-delay: 731ms;
+}
+
+[scroll-duration="731"] {
+  transition-duration: 731ms;
+}
+
+[scroll-delay="732"] {
+  transition-delay: 732ms;
+}
+
+[scroll-duration="732"] {
+  transition-duration: 732ms;
+}
+
+[scroll-delay="733"] {
+  transition-delay: 733ms;
+}
+
+[scroll-duration="733"] {
+  transition-duration: 733ms;
+}
+
+[scroll-delay="734"] {
+  transition-delay: 734ms;
+}
+
+[scroll-duration="734"] {
+  transition-duration: 734ms;
+}
+
+[scroll-delay="735"] {
+  transition-delay: 735ms;
+}
+
+[scroll-duration="735"] {
+  transition-duration: 735ms;
+}
+
+[scroll-delay="736"] {
+  transition-delay: 736ms;
+}
+
+[scroll-duration="736"] {
+  transition-duration: 736ms;
+}
+
+[scroll-delay="737"] {
+  transition-delay: 737ms;
+}
+
+[scroll-duration="737"] {
+  transition-duration: 737ms;
+}
+
+[scroll-delay="738"] {
+  transition-delay: 738ms;
+}
+
+[scroll-duration="738"] {
+  transition-duration: 738ms;
+}
+
+[scroll-delay="739"] {
+  transition-delay: 739ms;
+}
+
+[scroll-duration="739"] {
+  transition-duration: 739ms;
+}
+
+[scroll-delay="740"] {
+  transition-delay: 740ms;
+}
+
+[scroll-duration="740"] {
+  transition-duration: 740ms;
+}
+
+[scroll-delay="741"] {
+  transition-delay: 741ms;
+}
+
+[scroll-duration="741"] {
+  transition-duration: 741ms;
+}
+
+[scroll-delay="742"] {
+  transition-delay: 742ms;
+}
+
+[scroll-duration="742"] {
+  transition-duration: 742ms;
+}
+
+[scroll-delay="743"] {
+  transition-delay: 743ms;
+}
+
+[scroll-duration="743"] {
+  transition-duration: 743ms;
+}
+
+[scroll-delay="744"] {
+  transition-delay: 744ms;
+}
+
+[scroll-duration="744"] {
+  transition-duration: 744ms;
+}
+
+[scroll-delay="745"] {
+  transition-delay: 745ms;
+}
+
+[scroll-duration="745"] {
+  transition-duration: 745ms;
+}
+
+[scroll-delay="746"] {
+  transition-delay: 746ms;
+}
+
+[scroll-duration="746"] {
+  transition-duration: 746ms;
+}
+
+[scroll-delay="747"] {
+  transition-delay: 747ms;
+}
+
+[scroll-duration="747"] {
+  transition-duration: 747ms;
+}
+
+[scroll-delay="748"] {
+  transition-delay: 748ms;
+}
+
+[scroll-duration="748"] {
+  transition-duration: 748ms;
+}
+
+[scroll-delay="749"] {
+  transition-delay: 749ms;
+}
+
+[scroll-duration="749"] {
+  transition-duration: 749ms;
+}
+
+[scroll-delay="750"] {
+  transition-delay: 750ms;
+}
+
+[scroll-duration="750"] {
+  transition-duration: 750ms;
+}
+
+[scroll-delay="751"] {
+  transition-delay: 751ms;
+}
+
+[scroll-duration="751"] {
+  transition-duration: 751ms;
+}
+
+[scroll-delay="752"] {
+  transition-delay: 752ms;
+}
+
+[scroll-duration="752"] {
+  transition-duration: 752ms;
+}
+
+[scroll-delay="753"] {
+  transition-delay: 753ms;
+}
+
+[scroll-duration="753"] {
+  transition-duration: 753ms;
+}
+
+[scroll-delay="754"] {
+  transition-delay: 754ms;
+}
+
+[scroll-duration="754"] {
+  transition-duration: 754ms;
+}
+
+[scroll-delay="755"] {
+  transition-delay: 755ms;
+}
+
+[scroll-duration="755"] {
+  transition-duration: 755ms;
+}
+
+[scroll-delay="756"] {
+  transition-delay: 756ms;
+}
+
+[scroll-duration="756"] {
+  transition-duration: 756ms;
+}
+
+[scroll-delay="757"] {
+  transition-delay: 757ms;
+}
+
+[scroll-duration="757"] {
+  transition-duration: 757ms;
+}
+
+[scroll-delay="758"] {
+  transition-delay: 758ms;
+}
+
+[scroll-duration="758"] {
+  transition-duration: 758ms;
+}
+
+[scroll-delay="759"] {
+  transition-delay: 759ms;
+}
+
+[scroll-duration="759"] {
+  transition-duration: 759ms;
+}
+
+[scroll-delay="760"] {
+  transition-delay: 760ms;
+}
+
+[scroll-duration="760"] {
+  transition-duration: 760ms;
+}
+
+[scroll-delay="761"] {
+  transition-delay: 761ms;
+}
+
+[scroll-duration="761"] {
+  transition-duration: 761ms;
+}
+
+[scroll-delay="762"] {
+  transition-delay: 762ms;
+}
+
+[scroll-duration="762"] {
+  transition-duration: 762ms;
+}
+
+[scroll-delay="763"] {
+  transition-delay: 763ms;
+}
+
+[scroll-duration="763"] {
+  transition-duration: 763ms;
+}
+
+[scroll-delay="764"] {
+  transition-delay: 764ms;
+}
+
+[scroll-duration="764"] {
+  transition-duration: 764ms;
+}
+
+[scroll-delay="765"] {
+  transition-delay: 765ms;
+}
+
+[scroll-duration="765"] {
+  transition-duration: 765ms;
+}
+
+[scroll-delay="766"] {
+  transition-delay: 766ms;
+}
+
+[scroll-duration="766"] {
+  transition-duration: 766ms;
+}
+
+[scroll-delay="767"] {
+  transition-delay: 767ms;
+}
+
+[scroll-duration="767"] {
+  transition-duration: 767ms;
+}
+
+[scroll-delay="768"] {
+  transition-delay: 768ms;
+}
+
+[scroll-duration="768"] {
+  transition-duration: 768ms;
+}
+
+[scroll-delay="769"] {
+  transition-delay: 769ms;
+}
+
+[scroll-duration="769"] {
+  transition-duration: 769ms;
+}
+
+[scroll-delay="770"] {
+  transition-delay: 770ms;
+}
+
+[scroll-duration="770"] {
+  transition-duration: 770ms;
+}
+
+[scroll-delay="771"] {
+  transition-delay: 771ms;
+}
+
+[scroll-duration="771"] {
+  transition-duration: 771ms;
+}
+
+[scroll-delay="772"] {
+  transition-delay: 772ms;
+}
+
+[scroll-duration="772"] {
+  transition-duration: 772ms;
+}
+
+[scroll-delay="773"] {
+  transition-delay: 773ms;
+}
+
+[scroll-duration="773"] {
+  transition-duration: 773ms;
+}
+
+[scroll-delay="774"] {
+  transition-delay: 774ms;
+}
+
+[scroll-duration="774"] {
+  transition-duration: 774ms;
+}
+
+[scroll-delay="775"] {
+  transition-delay: 775ms;
+}
+
+[scroll-duration="775"] {
+  transition-duration: 775ms;
+}
+
+[scroll-delay="776"] {
+  transition-delay: 776ms;
+}
+
+[scroll-duration="776"] {
+  transition-duration: 776ms;
+}
+
+[scroll-delay="777"] {
+  transition-delay: 777ms;
+}
+
+[scroll-duration="777"] {
+  transition-duration: 777ms;
+}
+
+[scroll-delay="778"] {
+  transition-delay: 778ms;
+}
+
+[scroll-duration="778"] {
+  transition-duration: 778ms;
+}
+
+[scroll-delay="779"] {
+  transition-delay: 779ms;
+}
+
+[scroll-duration="779"] {
+  transition-duration: 779ms;
+}
+
+[scroll-delay="780"] {
+  transition-delay: 780ms;
+}
+
+[scroll-duration="780"] {
+  transition-duration: 780ms;
+}
+
+[scroll-delay="781"] {
+  transition-delay: 781ms;
+}
+
+[scroll-duration="781"] {
+  transition-duration: 781ms;
+}
+
+[scroll-delay="782"] {
+  transition-delay: 782ms;
+}
+
+[scroll-duration="782"] {
+  transition-duration: 782ms;
+}
+
+[scroll-delay="783"] {
+  transition-delay: 783ms;
+}
+
+[scroll-duration="783"] {
+  transition-duration: 783ms;
+}
+
+[scroll-delay="784"] {
+  transition-delay: 784ms;
+}
+
+[scroll-duration="784"] {
+  transition-duration: 784ms;
+}
+
+[scroll-delay="785"] {
+  transition-delay: 785ms;
+}
+
+[scroll-duration="785"] {
+  transition-duration: 785ms;
+}
+
+[scroll-delay="786"] {
+  transition-delay: 786ms;
+}
+
+[scroll-duration="786"] {
+  transition-duration: 786ms;
+}
+
+[scroll-delay="787"] {
+  transition-delay: 787ms;
+}
+
+[scroll-duration="787"] {
+  transition-duration: 787ms;
+}
+
+[scroll-delay="788"] {
+  transition-delay: 788ms;
+}
+
+[scroll-duration="788"] {
+  transition-duration: 788ms;
+}
+
+[scroll-delay="789"] {
+  transition-delay: 789ms;
+}
+
+[scroll-duration="789"] {
+  transition-duration: 789ms;
+}
+
+[scroll-delay="790"] {
+  transition-delay: 790ms;
+}
+
+[scroll-duration="790"] {
+  transition-duration: 790ms;
+}
+
+[scroll-delay="791"] {
+  transition-delay: 791ms;
+}
+
+[scroll-duration="791"] {
+  transition-duration: 791ms;
+}
+
+[scroll-delay="792"] {
+  transition-delay: 792ms;
+}
+
+[scroll-duration="792"] {
+  transition-duration: 792ms;
+}
+
+[scroll-delay="793"] {
+  transition-delay: 793ms;
+}
+
+[scroll-duration="793"] {
+  transition-duration: 793ms;
+}
+
+[scroll-delay="794"] {
+  transition-delay: 794ms;
+}
+
+[scroll-duration="794"] {
+  transition-duration: 794ms;
+}
+
+[scroll-delay="795"] {
+  transition-delay: 795ms;
+}
+
+[scroll-duration="795"] {
+  transition-duration: 795ms;
+}
+
+[scroll-delay="796"] {
+  transition-delay: 796ms;
+}
+
+[scroll-duration="796"] {
+  transition-duration: 796ms;
+}
+
+[scroll-delay="797"] {
+  transition-delay: 797ms;
+}
+
+[scroll-duration="797"] {
+  transition-duration: 797ms;
+}
+
+[scroll-delay="798"] {
+  transition-delay: 798ms;
+}
+
+[scroll-duration="798"] {
+  transition-duration: 798ms;
+}
+
+[scroll-delay="799"] {
+  transition-delay: 799ms;
+}
+
+[scroll-duration="799"] {
+  transition-duration: 799ms;
+}
+
+[scroll-delay="800"] {
+  transition-delay: 800ms;
+}
+
+[scroll-duration="800"] {
+  transition-duration: 800ms;
+}
+
+[scroll-delay="801"] {
+  transition-delay: 801ms;
+}
+
+[scroll-duration="801"] {
+  transition-duration: 801ms;
+}
+
+[scroll-delay="802"] {
+  transition-delay: 802ms;
+}
+
+[scroll-duration="802"] {
+  transition-duration: 802ms;
+}
+
+[scroll-delay="803"] {
+  transition-delay: 803ms;
+}
+
+[scroll-duration="803"] {
+  transition-duration: 803ms;
+}
+
+[scroll-delay="804"] {
+  transition-delay: 804ms;
+}
+
+[scroll-duration="804"] {
+  transition-duration: 804ms;
+}
+
+[scroll-delay="805"] {
+  transition-delay: 805ms;
+}
+
+[scroll-duration="805"] {
+  transition-duration: 805ms;
+}
+
+[scroll-delay="806"] {
+  transition-delay: 806ms;
+}
+
+[scroll-duration="806"] {
+  transition-duration: 806ms;
+}
+
+[scroll-delay="807"] {
+  transition-delay: 807ms;
+}
+
+[scroll-duration="807"] {
+  transition-duration: 807ms;
+}
+
+[scroll-delay="808"] {
+  transition-delay: 808ms;
+}
+
+[scroll-duration="808"] {
+  transition-duration: 808ms;
+}
+
+[scroll-delay="809"] {
+  transition-delay: 809ms;
+}
+
+[scroll-duration="809"] {
+  transition-duration: 809ms;
+}
+
+[scroll-delay="810"] {
+  transition-delay: 810ms;
+}
+
+[scroll-duration="810"] {
+  transition-duration: 810ms;
+}
+
+[scroll-delay="811"] {
+  transition-delay: 811ms;
+}
+
+[scroll-duration="811"] {
+  transition-duration: 811ms;
+}
+
+[scroll-delay="812"] {
+  transition-delay: 812ms;
+}
+
+[scroll-duration="812"] {
+  transition-duration: 812ms;
+}
+
+[scroll-delay="813"] {
+  transition-delay: 813ms;
+}
+
+[scroll-duration="813"] {
+  transition-duration: 813ms;
+}
+
+[scroll-delay="814"] {
+  transition-delay: 814ms;
+}
+
+[scroll-duration="814"] {
+  transition-duration: 814ms;
+}
+
+[scroll-delay="815"] {
+  transition-delay: 815ms;
+}
+
+[scroll-duration="815"] {
+  transition-duration: 815ms;
+}
+
+[scroll-delay="816"] {
+  transition-delay: 816ms;
+}
+
+[scroll-duration="816"] {
+  transition-duration: 816ms;
+}
+
+[scroll-delay="817"] {
+  transition-delay: 817ms;
+}
+
+[scroll-duration="817"] {
+  transition-duration: 817ms;
+}
+
+[scroll-delay="818"] {
+  transition-delay: 818ms;
+}
+
+[scroll-duration="818"] {
+  transition-duration: 818ms;
+}
+
+[scroll-delay="819"] {
+  transition-delay: 819ms;
+}
+
+[scroll-duration="819"] {
+  transition-duration: 819ms;
+}
+
+[scroll-delay="820"] {
+  transition-delay: 820ms;
+}
+
+[scroll-duration="820"] {
+  transition-duration: 820ms;
+}
+
+[scroll-delay="821"] {
+  transition-delay: 821ms;
+}
+
+[scroll-duration="821"] {
+  transition-duration: 821ms;
+}
+
+[scroll-delay="822"] {
+  transition-delay: 822ms;
+}
+
+[scroll-duration="822"] {
+  transition-duration: 822ms;
+}
+
+[scroll-delay="823"] {
+  transition-delay: 823ms;
+}
+
+[scroll-duration="823"] {
+  transition-duration: 823ms;
+}
+
+[scroll-delay="824"] {
+  transition-delay: 824ms;
+}
+
+[scroll-duration="824"] {
+  transition-duration: 824ms;
+}
+
+[scroll-delay="825"] {
+  transition-delay: 825ms;
+}
+
+[scroll-duration="825"] {
+  transition-duration: 825ms;
+}
+
+[scroll-delay="826"] {
+  transition-delay: 826ms;
+}
+
+[scroll-duration="826"] {
+  transition-duration: 826ms;
+}
+
+[scroll-delay="827"] {
+  transition-delay: 827ms;
+}
+
+[scroll-duration="827"] {
+  transition-duration: 827ms;
+}
+
+[scroll-delay="828"] {
+  transition-delay: 828ms;
+}
+
+[scroll-duration="828"] {
+  transition-duration: 828ms;
+}
+
+[scroll-delay="829"] {
+  transition-delay: 829ms;
+}
+
+[scroll-duration="829"] {
+  transition-duration: 829ms;
+}
+
+[scroll-delay="830"] {
+  transition-delay: 830ms;
+}
+
+[scroll-duration="830"] {
+  transition-duration: 830ms;
+}
+
+[scroll-delay="831"] {
+  transition-delay: 831ms;
+}
+
+[scroll-duration="831"] {
+  transition-duration: 831ms;
+}
+
+[scroll-delay="832"] {
+  transition-delay: 832ms;
+}
+
+[scroll-duration="832"] {
+  transition-duration: 832ms;
+}
+
+[scroll-delay="833"] {
+  transition-delay: 833ms;
+}
+
+[scroll-duration="833"] {
+  transition-duration: 833ms;
+}
+
+[scroll-delay="834"] {
+  transition-delay: 834ms;
+}
+
+[scroll-duration="834"] {
+  transition-duration: 834ms;
+}
+
+[scroll-delay="835"] {
+  transition-delay: 835ms;
+}
+
+[scroll-duration="835"] {
+  transition-duration: 835ms;
+}
+
+[scroll-delay="836"] {
+  transition-delay: 836ms;
+}
+
+[scroll-duration="836"] {
+  transition-duration: 836ms;
+}
+
+[scroll-delay="837"] {
+  transition-delay: 837ms;
+}
+
+[scroll-duration="837"] {
+  transition-duration: 837ms;
+}
+
+[scroll-delay="838"] {
+  transition-delay: 838ms;
+}
+
+[scroll-duration="838"] {
+  transition-duration: 838ms;
+}
+
+[scroll-delay="839"] {
+  transition-delay: 839ms;
+}
+
+[scroll-duration="839"] {
+  transition-duration: 839ms;
+}
+
+[scroll-delay="840"] {
+  transition-delay: 840ms;
+}
+
+[scroll-duration="840"] {
+  transition-duration: 840ms;
+}
+
+[scroll-delay="841"] {
+  transition-delay: 841ms;
+}
+
+[scroll-duration="841"] {
+  transition-duration: 841ms;
+}
+
+[scroll-delay="842"] {
+  transition-delay: 842ms;
+}
+
+[scroll-duration="842"] {
+  transition-duration: 842ms;
+}
+
+[scroll-delay="843"] {
+  transition-delay: 843ms;
+}
+
+[scroll-duration="843"] {
+  transition-duration: 843ms;
+}
+
+[scroll-delay="844"] {
+  transition-delay: 844ms;
+}
+
+[scroll-duration="844"] {
+  transition-duration: 844ms;
+}
+
+[scroll-delay="845"] {
+  transition-delay: 845ms;
+}
+
+[scroll-duration="845"] {
+  transition-duration: 845ms;
+}
+
+[scroll-delay="846"] {
+  transition-delay: 846ms;
+}
+
+[scroll-duration="846"] {
+  transition-duration: 846ms;
+}
+
+[scroll-delay="847"] {
+  transition-delay: 847ms;
+}
+
+[scroll-duration="847"] {
+  transition-duration: 847ms;
+}
+
+[scroll-delay="848"] {
+  transition-delay: 848ms;
+}
+
+[scroll-duration="848"] {
+  transition-duration: 848ms;
+}
+
+[scroll-delay="849"] {
+  transition-delay: 849ms;
+}
+
+[scroll-duration="849"] {
+  transition-duration: 849ms;
+}
+
+[scroll-delay="850"] {
+  transition-delay: 850ms;
+}
+
+[scroll-duration="850"] {
+  transition-duration: 850ms;
+}
+
+[scroll-delay="851"] {
+  transition-delay: 851ms;
+}
+
+[scroll-duration="851"] {
+  transition-duration: 851ms;
+}
+
+[scroll-delay="852"] {
+  transition-delay: 852ms;
+}
+
+[scroll-duration="852"] {
+  transition-duration: 852ms;
+}
+
+[scroll-delay="853"] {
+  transition-delay: 853ms;
+}
+
+[scroll-duration="853"] {
+  transition-duration: 853ms;
+}
+
+[scroll-delay="854"] {
+  transition-delay: 854ms;
+}
+
+[scroll-duration="854"] {
+  transition-duration: 854ms;
+}
+
+[scroll-delay="855"] {
+  transition-delay: 855ms;
+}
+
+[scroll-duration="855"] {
+  transition-duration: 855ms;
+}
+
+[scroll-delay="856"] {
+  transition-delay: 856ms;
+}
+
+[scroll-duration="856"] {
+  transition-duration: 856ms;
+}
+
+[scroll-delay="857"] {
+  transition-delay: 857ms;
+}
+
+[scroll-duration="857"] {
+  transition-duration: 857ms;
+}
+
+[scroll-delay="858"] {
+  transition-delay: 858ms;
+}
+
+[scroll-duration="858"] {
+  transition-duration: 858ms;
+}
+
+[scroll-delay="859"] {
+  transition-delay: 859ms;
+}
+
+[scroll-duration="859"] {
+  transition-duration: 859ms;
+}
+
+[scroll-delay="860"] {
+  transition-delay: 860ms;
+}
+
+[scroll-duration="860"] {
+  transition-duration: 860ms;
+}
+
+[scroll-delay="861"] {
+  transition-delay: 861ms;
+}
+
+[scroll-duration="861"] {
+  transition-duration: 861ms;
+}
+
+[scroll-delay="862"] {
+  transition-delay: 862ms;
+}
+
+[scroll-duration="862"] {
+  transition-duration: 862ms;
+}
+
+[scroll-delay="863"] {
+  transition-delay: 863ms;
+}
+
+[scroll-duration="863"] {
+  transition-duration: 863ms;
+}
+
+[scroll-delay="864"] {
+  transition-delay: 864ms;
+}
+
+[scroll-duration="864"] {
+  transition-duration: 864ms;
+}
+
+[scroll-delay="865"] {
+  transition-delay: 865ms;
+}
+
+[scroll-duration="865"] {
+  transition-duration: 865ms;
+}
+
+[scroll-delay="866"] {
+  transition-delay: 866ms;
+}
+
+[scroll-duration="866"] {
+  transition-duration: 866ms;
+}
+
+[scroll-delay="867"] {
+  transition-delay: 867ms;
+}
+
+[scroll-duration="867"] {
+  transition-duration: 867ms;
+}
+
+[scroll-delay="868"] {
+  transition-delay: 868ms;
+}
+
+[scroll-duration="868"] {
+  transition-duration: 868ms;
+}
+
+[scroll-delay="869"] {
+  transition-delay: 869ms;
+}
+
+[scroll-duration="869"] {
+  transition-duration: 869ms;
+}
+
+[scroll-delay="870"] {
+  transition-delay: 870ms;
+}
+
+[scroll-duration="870"] {
+  transition-duration: 870ms;
+}
+
+[scroll-delay="871"] {
+  transition-delay: 871ms;
+}
+
+[scroll-duration="871"] {
+  transition-duration: 871ms;
+}
+
+[scroll-delay="872"] {
+  transition-delay: 872ms;
+}
+
+[scroll-duration="872"] {
+  transition-duration: 872ms;
+}
+
+[scroll-delay="873"] {
+  transition-delay: 873ms;
+}
+
+[scroll-duration="873"] {
+  transition-duration: 873ms;
+}
+
+[scroll-delay="874"] {
+  transition-delay: 874ms;
+}
+
+[scroll-duration="874"] {
+  transition-duration: 874ms;
+}
+
+[scroll-delay="875"] {
+  transition-delay: 875ms;
+}
+
+[scroll-duration="875"] {
+  transition-duration: 875ms;
+}
+
+[scroll-delay="876"] {
+  transition-delay: 876ms;
+}
+
+[scroll-duration="876"] {
+  transition-duration: 876ms;
+}
+
+[scroll-delay="877"] {
+  transition-delay: 877ms;
+}
+
+[scroll-duration="877"] {
+  transition-duration: 877ms;
+}
+
+[scroll-delay="878"] {
+  transition-delay: 878ms;
+}
+
+[scroll-duration="878"] {
+  transition-duration: 878ms;
+}
+
+[scroll-delay="879"] {
+  transition-delay: 879ms;
+}
+
+[scroll-duration="879"] {
+  transition-duration: 879ms;
+}
+
+[scroll-delay="880"] {
+  transition-delay: 880ms;
+}
+
+[scroll-duration="880"] {
+  transition-duration: 880ms;
+}
+
+[scroll-delay="881"] {
+  transition-delay: 881ms;
+}
+
+[scroll-duration="881"] {
+  transition-duration: 881ms;
+}
+
+[scroll-delay="882"] {
+  transition-delay: 882ms;
+}
+
+[scroll-duration="882"] {
+  transition-duration: 882ms;
+}
+
+[scroll-delay="883"] {
+  transition-delay: 883ms;
+}
+
+[scroll-duration="883"] {
+  transition-duration: 883ms;
+}
+
+[scroll-delay="884"] {
+  transition-delay: 884ms;
+}
+
+[scroll-duration="884"] {
+  transition-duration: 884ms;
+}
+
+[scroll-delay="885"] {
+  transition-delay: 885ms;
+}
+
+[scroll-duration="885"] {
+  transition-duration: 885ms;
+}
+
+[scroll-delay="886"] {
+  transition-delay: 886ms;
+}
+
+[scroll-duration="886"] {
+  transition-duration: 886ms;
+}
+
+[scroll-delay="887"] {
+  transition-delay: 887ms;
+}
+
+[scroll-duration="887"] {
+  transition-duration: 887ms;
+}
+
+[scroll-delay="888"] {
+  transition-delay: 888ms;
+}
+
+[scroll-duration="888"] {
+  transition-duration: 888ms;
+}
+
+[scroll-delay="889"] {
+  transition-delay: 889ms;
+}
+
+[scroll-duration="889"] {
+  transition-duration: 889ms;
+}
+
+[scroll-delay="890"] {
+  transition-delay: 890ms;
+}
+
+[scroll-duration="890"] {
+  transition-duration: 890ms;
+}
+
+[scroll-delay="891"] {
+  transition-delay: 891ms;
+}
+
+[scroll-duration="891"] {
+  transition-duration: 891ms;
+}
+
+[scroll-delay="892"] {
+  transition-delay: 892ms;
+}
+
+[scroll-duration="892"] {
+  transition-duration: 892ms;
+}
+
+[scroll-delay="893"] {
+  transition-delay: 893ms;
+}
+
+[scroll-duration="893"] {
+  transition-duration: 893ms;
+}
+
+[scroll-delay="894"] {
+  transition-delay: 894ms;
+}
+
+[scroll-duration="894"] {
+  transition-duration: 894ms;
+}
+
+[scroll-delay="895"] {
+  transition-delay: 895ms;
+}
+
+[scroll-duration="895"] {
+  transition-duration: 895ms;
+}
+
+[scroll-delay="896"] {
+  transition-delay: 896ms;
+}
+
+[scroll-duration="896"] {
+  transition-duration: 896ms;
+}
+
+[scroll-delay="897"] {
+  transition-delay: 897ms;
+}
+
+[scroll-duration="897"] {
+  transition-duration: 897ms;
+}
+
+[scroll-delay="898"] {
+  transition-delay: 898ms;
+}
+
+[scroll-duration="898"] {
+  transition-duration: 898ms;
+}
+
+[scroll-delay="899"] {
+  transition-delay: 899ms;
+}
+
+[scroll-duration="899"] {
+  transition-duration: 899ms;
+}
+
+[scroll-delay="900"] {
+  transition-delay: 900ms;
+}
+
+[scroll-duration="900"] {
+  transition-duration: 900ms;
+}
+
+[scroll-delay="901"] {
+  transition-delay: 901ms;
+}
+
+[scroll-duration="901"] {
+  transition-duration: 901ms;
+}
+
+[scroll-delay="902"] {
+  transition-delay: 902ms;
+}
+
+[scroll-duration="902"] {
+  transition-duration: 902ms;
+}
+
+[scroll-delay="903"] {
+  transition-delay: 903ms;
+}
+
+[scroll-duration="903"] {
+  transition-duration: 903ms;
+}
+
+[scroll-delay="904"] {
+  transition-delay: 904ms;
+}
+
+[scroll-duration="904"] {
+  transition-duration: 904ms;
+}
+
+[scroll-delay="905"] {
+  transition-delay: 905ms;
+}
+
+[scroll-duration="905"] {
+  transition-duration: 905ms;
+}
+
+[scroll-delay="906"] {
+  transition-delay: 906ms;
+}
+
+[scroll-duration="906"] {
+  transition-duration: 906ms;
+}
+
+[scroll-delay="907"] {
+  transition-delay: 907ms;
+}
+
+[scroll-duration="907"] {
+  transition-duration: 907ms;
+}
+
+[scroll-delay="908"] {
+  transition-delay: 908ms;
+}
+
+[scroll-duration="908"] {
+  transition-duration: 908ms;
+}
+
+[scroll-delay="909"] {
+  transition-delay: 909ms;
+}
+
+[scroll-duration="909"] {
+  transition-duration: 909ms;
+}
+
+[scroll-delay="910"] {
+  transition-delay: 910ms;
+}
+
+[scroll-duration="910"] {
+  transition-duration: 910ms;
+}
+
+[scroll-delay="911"] {
+  transition-delay: 911ms;
+}
+
+[scroll-duration="911"] {
+  transition-duration: 911ms;
+}
+
+[scroll-delay="912"] {
+  transition-delay: 912ms;
+}
+
+[scroll-duration="912"] {
+  transition-duration: 912ms;
+}
+
+[scroll-delay="913"] {
+  transition-delay: 913ms;
+}
+
+[scroll-duration="913"] {
+  transition-duration: 913ms;
+}
+
+[scroll-delay="914"] {
+  transition-delay: 914ms;
+}
+
+[scroll-duration="914"] {
+  transition-duration: 914ms;
+}
+
+[scroll-delay="915"] {
+  transition-delay: 915ms;
+}
+
+[scroll-duration="915"] {
+  transition-duration: 915ms;
+}
+
+[scroll-delay="916"] {
+  transition-delay: 916ms;
+}
+
+[scroll-duration="916"] {
+  transition-duration: 916ms;
+}
+
+[scroll-delay="917"] {
+  transition-delay: 917ms;
+}
+
+[scroll-duration="917"] {
+  transition-duration: 917ms;
+}
+
+[scroll-delay="918"] {
+  transition-delay: 918ms;
+}
+
+[scroll-duration="918"] {
+  transition-duration: 918ms;
+}
+
+[scroll-delay="919"] {
+  transition-delay: 919ms;
+}
+
+[scroll-duration="919"] {
+  transition-duration: 919ms;
+}
+
+[scroll-delay="920"] {
+  transition-delay: 920ms;
+}
+
+[scroll-duration="920"] {
+  transition-duration: 920ms;
+}
+
+[scroll-delay="921"] {
+  transition-delay: 921ms;
+}
+
+[scroll-duration="921"] {
+  transition-duration: 921ms;
+}
+
+[scroll-delay="922"] {
+  transition-delay: 922ms;
+}
+
+[scroll-duration="922"] {
+  transition-duration: 922ms;
+}
+
+[scroll-delay="923"] {
+  transition-delay: 923ms;
+}
+
+[scroll-duration="923"] {
+  transition-duration: 923ms;
+}
+
+[scroll-delay="924"] {
+  transition-delay: 924ms;
+}
+
+[scroll-duration="924"] {
+  transition-duration: 924ms;
+}
+
+[scroll-delay="925"] {
+  transition-delay: 925ms;
+}
+
+[scroll-duration="925"] {
+  transition-duration: 925ms;
+}
+
+[scroll-delay="926"] {
+  transition-delay: 926ms;
+}
+
+[scroll-duration="926"] {
+  transition-duration: 926ms;
+}
+
+[scroll-delay="927"] {
+  transition-delay: 927ms;
+}
+
+[scroll-duration="927"] {
+  transition-duration: 927ms;
+}
+
+[scroll-delay="928"] {
+  transition-delay: 928ms;
+}
+
+[scroll-duration="928"] {
+  transition-duration: 928ms;
+}
+
+[scroll-delay="929"] {
+  transition-delay: 929ms;
+}
+
+[scroll-duration="929"] {
+  transition-duration: 929ms;
+}
+
+[scroll-delay="930"] {
+  transition-delay: 930ms;
+}
+
+[scroll-duration="930"] {
+  transition-duration: 930ms;
+}
+
+[scroll-delay="931"] {
+  transition-delay: 931ms;
+}
+
+[scroll-duration="931"] {
+  transition-duration: 931ms;
+}
+
+[scroll-delay="932"] {
+  transition-delay: 932ms;
+}
+
+[scroll-duration="932"] {
+  transition-duration: 932ms;
+}
+
+[scroll-delay="933"] {
+  transition-delay: 933ms;
+}
+
+[scroll-duration="933"] {
+  transition-duration: 933ms;
+}
+
+[scroll-delay="934"] {
+  transition-delay: 934ms;
+}
+
+[scroll-duration="934"] {
+  transition-duration: 934ms;
+}
+
+[scroll-delay="935"] {
+  transition-delay: 935ms;
+}
+
+[scroll-duration="935"] {
+  transition-duration: 935ms;
+}
+
+[scroll-delay="936"] {
+  transition-delay: 936ms;
+}
+
+[scroll-duration="936"] {
+  transition-duration: 936ms;
+}
+
+[scroll-delay="937"] {
+  transition-delay: 937ms;
+}
+
+[scroll-duration="937"] {
+  transition-duration: 937ms;
+}
+
+[scroll-delay="938"] {
+  transition-delay: 938ms;
+}
+
+[scroll-duration="938"] {
+  transition-duration: 938ms;
+}
+
+[scroll-delay="939"] {
+  transition-delay: 939ms;
+}
+
+[scroll-duration="939"] {
+  transition-duration: 939ms;
+}
+
+[scroll-delay="940"] {
+  transition-delay: 940ms;
+}
+
+[scroll-duration="940"] {
+  transition-duration: 940ms;
+}
+
+[scroll-delay="941"] {
+  transition-delay: 941ms;
+}
+
+[scroll-duration="941"] {
+  transition-duration: 941ms;
+}
+
+[scroll-delay="942"] {
+  transition-delay: 942ms;
+}
+
+[scroll-duration="942"] {
+  transition-duration: 942ms;
+}
+
+[scroll-delay="943"] {
+  transition-delay: 943ms;
+}
+
+[scroll-duration="943"] {
+  transition-duration: 943ms;
+}
+
+[scroll-delay="944"] {
+  transition-delay: 944ms;
+}
+
+[scroll-duration="944"] {
+  transition-duration: 944ms;
+}
+
+[scroll-delay="945"] {
+  transition-delay: 945ms;
+}
+
+[scroll-duration="945"] {
+  transition-duration: 945ms;
+}
+
+[scroll-delay="946"] {
+  transition-delay: 946ms;
+}
+
+[scroll-duration="946"] {
+  transition-duration: 946ms;
+}
+
+[scroll-delay="947"] {
+  transition-delay: 947ms;
+}
+
+[scroll-duration="947"] {
+  transition-duration: 947ms;
+}
+
+[scroll-delay="948"] {
+  transition-delay: 948ms;
+}
+
+[scroll-duration="948"] {
+  transition-duration: 948ms;
+}
+
+[scroll-delay="949"] {
+  transition-delay: 949ms;
+}
+
+[scroll-duration="949"] {
+  transition-duration: 949ms;
+}
+
+[scroll-delay="950"] {
+  transition-delay: 950ms;
+}
+
+[scroll-duration="950"] {
+  transition-duration: 950ms;
+}
+
+[scroll-delay="951"] {
+  transition-delay: 951ms;
+}
+
+[scroll-duration="951"] {
+  transition-duration: 951ms;
+}
+
+[scroll-delay="952"] {
+  transition-delay: 952ms;
+}
+
+[scroll-duration="952"] {
+  transition-duration: 952ms;
+}
+
+[scroll-delay="953"] {
+  transition-delay: 953ms;
+}
+
+[scroll-duration="953"] {
+  transition-duration: 953ms;
+}
+
+[scroll-delay="954"] {
+  transition-delay: 954ms;
+}
+
+[scroll-duration="954"] {
+  transition-duration: 954ms;
+}
+
+[scroll-delay="955"] {
+  transition-delay: 955ms;
+}
+
+[scroll-duration="955"] {
+  transition-duration: 955ms;
+}
+
+[scroll-delay="956"] {
+  transition-delay: 956ms;
+}
+
+[scroll-duration="956"] {
+  transition-duration: 956ms;
+}
+
+[scroll-delay="957"] {
+  transition-delay: 957ms;
+}
+
+[scroll-duration="957"] {
+  transition-duration: 957ms;
+}
+
+[scroll-delay="958"] {
+  transition-delay: 958ms;
+}
+
+[scroll-duration="958"] {
+  transition-duration: 958ms;
+}
+
+[scroll-delay="959"] {
+  transition-delay: 959ms;
+}
+
+[scroll-duration="959"] {
+  transition-duration: 959ms;
+}
+
+[scroll-delay="960"] {
+  transition-delay: 960ms;
+}
+
+[scroll-duration="960"] {
+  transition-duration: 960ms;
+}
+
+[scroll-delay="961"] {
+  transition-delay: 961ms;
+}
+
+[scroll-duration="961"] {
+  transition-duration: 961ms;
+}
+
+[scroll-delay="962"] {
+  transition-delay: 962ms;
+}
+
+[scroll-duration="962"] {
+  transition-duration: 962ms;
+}
+
+[scroll-delay="963"] {
+  transition-delay: 963ms;
+}
+
+[scroll-duration="963"] {
+  transition-duration: 963ms;
+}
+
+[scroll-delay="964"] {
+  transition-delay: 964ms;
+}
+
+[scroll-duration="964"] {
+  transition-duration: 964ms;
+}
+
+[scroll-delay="965"] {
+  transition-delay: 965ms;
+}
+
+[scroll-duration="965"] {
+  transition-duration: 965ms;
+}
+
+[scroll-delay="966"] {
+  transition-delay: 966ms;
+}
+
+[scroll-duration="966"] {
+  transition-duration: 966ms;
+}
+
+[scroll-delay="967"] {
+  transition-delay: 967ms;
+}
+
+[scroll-duration="967"] {
+  transition-duration: 967ms;
+}
+
+[scroll-delay="968"] {
+  transition-delay: 968ms;
+}
+
+[scroll-duration="968"] {
+  transition-duration: 968ms;
+}
+
+[scroll-delay="969"] {
+  transition-delay: 969ms;
+}
+
+[scroll-duration="969"] {
+  transition-duration: 969ms;
+}
+
+[scroll-delay="970"] {
+  transition-delay: 970ms;
+}
+
+[scroll-duration="970"] {
+  transition-duration: 970ms;
+}
+
+[scroll-delay="971"] {
+  transition-delay: 971ms;
+}
+
+[scroll-duration="971"] {
+  transition-duration: 971ms;
+}
+
+[scroll-delay="972"] {
+  transition-delay: 972ms;
+}
+
+[scroll-duration="972"] {
+  transition-duration: 972ms;
+}
+
+[scroll-delay="973"] {
+  transition-delay: 973ms;
+}
+
+[scroll-duration="973"] {
+  transition-duration: 973ms;
+}
+
+[scroll-delay="974"] {
+  transition-delay: 974ms;
+}
+
+[scroll-duration="974"] {
+  transition-duration: 974ms;
+}
+
+[scroll-delay="975"] {
+  transition-delay: 975ms;
+}
+
+[scroll-duration="975"] {
+  transition-duration: 975ms;
+}
+
+[scroll-delay="976"] {
+  transition-delay: 976ms;
+}
+
+[scroll-duration="976"] {
+  transition-duration: 976ms;
+}
+
+[scroll-delay="977"] {
+  transition-delay: 977ms;
+}
+
+[scroll-duration="977"] {
+  transition-duration: 977ms;
+}
+
+[scroll-delay="978"] {
+  transition-delay: 978ms;
+}
+
+[scroll-duration="978"] {
+  transition-duration: 978ms;
+}
+
+[scroll-delay="979"] {
+  transition-delay: 979ms;
+}
+
+[scroll-duration="979"] {
+  transition-duration: 979ms;
+}
+
+[scroll-delay="980"] {
+  transition-delay: 980ms;
+}
+
+[scroll-duration="980"] {
+  transition-duration: 980ms;
+}
+
+[scroll-delay="981"] {
+  transition-delay: 981ms;
+}
+
+[scroll-duration="981"] {
+  transition-duration: 981ms;
+}
+
+[scroll-delay="982"] {
+  transition-delay: 982ms;
+}
+
+[scroll-duration="982"] {
+  transition-duration: 982ms;
+}
+
+[scroll-delay="983"] {
+  transition-delay: 983ms;
+}
+
+[scroll-duration="983"] {
+  transition-duration: 983ms;
+}
+
+[scroll-delay="984"] {
+  transition-delay: 984ms;
+}
+
+[scroll-duration="984"] {
+  transition-duration: 984ms;
+}
+
+[scroll-delay="985"] {
+  transition-delay: 985ms;
+}
+
+[scroll-duration="985"] {
+  transition-duration: 985ms;
+}
+
+[scroll-delay="986"] {
+  transition-delay: 986ms;
+}
+
+[scroll-duration="986"] {
+  transition-duration: 986ms;
+}
+
+[scroll-delay="987"] {
+  transition-delay: 987ms;
+}
+
+[scroll-duration="987"] {
+  transition-duration: 987ms;
+}
+
+[scroll-delay="988"] {
+  transition-delay: 988ms;
+}
+
+[scroll-duration="988"] {
+  transition-duration: 988ms;
+}
+
+[scroll-delay="989"] {
+  transition-delay: 989ms;
+}
+
+[scroll-duration="989"] {
+  transition-duration: 989ms;
+}
+
+[scroll-delay="990"] {
+  transition-delay: 990ms;
+}
+
+[scroll-duration="990"] {
+  transition-duration: 990ms;
+}
+
+[scroll-delay="991"] {
+  transition-delay: 991ms;
+}
+
+[scroll-duration="991"] {
+  transition-duration: 991ms;
+}
+
+[scroll-delay="992"] {
+  transition-delay: 992ms;
+}
+
+[scroll-duration="992"] {
+  transition-duration: 992ms;
+}
+
+[scroll-delay="993"] {
+  transition-delay: 993ms;
+}
+
+[scroll-duration="993"] {
+  transition-duration: 993ms;
+}
+
+[scroll-delay="994"] {
+  transition-delay: 994ms;
+}
+
+[scroll-duration="994"] {
+  transition-duration: 994ms;
+}
+
+[scroll-delay="995"] {
+  transition-delay: 995ms;
+}
+
+[scroll-duration="995"] {
+  transition-duration: 995ms;
+}
+
+[scroll-delay="996"] {
+  transition-delay: 996ms;
+}
+
+[scroll-duration="996"] {
+  transition-duration: 996ms;
+}
+
+[scroll-delay="997"] {
+  transition-delay: 997ms;
+}
+
+[scroll-duration="997"] {
+  transition-duration: 997ms;
+}
+
+[scroll-delay="998"] {
+  transition-delay: 998ms;
+}
+
+[scroll-duration="998"] {
+  transition-duration: 998ms;
+}
+
+[scroll-delay="999"] {
+  transition-delay: 999ms;
+}
+
+[scroll-duration="999"] {
+  transition-duration: 999ms;
+}
+
+[scroll-delay="1000"] {
+  transition-delay: 1000ms;
+}
+
+[scroll-duration="1000"] {
+  transition-duration: 1000ms;
+}
+
 .header-nav {
   position: absolute;
   top: 0;
@@ -246,7 +8185,7 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
   place-items: center;
   align-items: center;
   color: #fff;
-  z-index: 10;
+  z-index: 99;
 }
 .header-nav .header__left {
   margin: 0 10px;
@@ -325,6 +8264,7 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
   visibility: hidden;
   opacity: 0;
   padding: 100px;
+  text-align: center;
   align-items: center;
   flex-wrap: wrap;
   min-height: 100vh;
@@ -332,7 +8272,7 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
 }
 .hero .hero__content.active {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   place-items: center;
   transition: 0.1s;
   visibility: visible;
@@ -384,15 +8324,20 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
 .hero .hero__content .hero__content_left form input[type=search] {
   font-family: inherit;
   width: 100%;
-  font-size: 17px;
-  padding: 15px 10px;
+  font-size: 16px;
+  padding: 15px;
   box-shadow: 2px 1px 100px;
 }
 .hero .hero__content .hero__content_left form button {
-  margin: 10px 0 0 0;
+  margin: 10px auto;
+  height: 100%;
+  width: 90%;
   padding: 10px;
   font-size: 24px;
   background-color: #da0f4c !important;
+}
+.hero .hero__content .hero__content_left form button:hover {
+  transform: scale(0.9);
 }
 .hero .slides-controls-btn {
   position: absolute;
@@ -450,12 +8395,13 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
   justify-content: center;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  margin: 4rem 0;
 }
 #why_us .why-grid > div {
   margin: 30px;
 }
 #why_us .why-grid .image {
-  height: 500px;
+  height: 400px;
   background-color: #eee;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("/img/1.jpg");
   box-shadow: 2px 1px 16px;
@@ -597,6 +8543,7 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
 }
 #invitation .head {
   width: 400px;
+  margin: auto;
 }
 #invitation .head h2 {
   font-size: 4.4rem;
@@ -665,10 +8612,10 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
   flex-wrap: wrap;
 }
 #book:before {
-  content: "Booking";
-  font-size: calc(10rem - 100%);
+  content: "Book Tickets";
+  font-size: calc(11rem - 100%);
   font-weight: bolder;
-  padding: 0 10px;
+  padding: 0 20px;
   text-shadow: 0 0 30px #fff;
 }
 #book:after {
@@ -698,7 +8645,8 @@ footer form button:focus, #book button[type=submit]:focus, #why_us .why_2 .card 
   border-radius: 10px;
   background: #eee;
   width: 800px;
-  max-width: 90%;
+  max-width: 98%;
+  margin: auto;
 }
 #book .book form {
   width: 100%;
@@ -1020,7 +8968,7 @@ footer .connect .fa:hover, footer .connect .fab:hover {
   }
 
   .hero .hero__content {
-    padding: 60px 30px !important;
+    padding: 30px;
     align-items: center;
     flex-wrap: wrap;
   }
@@ -1034,9 +8982,20 @@ footer .connect .fa:hover, footer .connect .fab:hover {
     font-size: calc(3rem + 100%) !important;
   }
 
+  #invitation {
+    margin: 20px auto;
+  }
   #invitation .video {
     width: 90vw;
     height: 300px;
+  }
+
+  #book {
+    margin: 4rem 0;
+  }
+  #book:before {
+    content: "Booking";
+    font-size: calc(7rem - 100%);
   }
 
   footer {
@@ -1062,6 +9021,31 @@ footer .connect .fa:hover, footer .connect .fab:hover {
   }
   #invitation .video {
     width: 90%;
+  }
+}
+@media screen and (max-width: 580px) {
+  #invitation {
+    padding: 20px;
+  }
+  #invitation .head {
+    width: 90%;
+  }
+  #invitation .head h2 {
+    font-size: 3rem;
+  }
+  #invitation .head p {
+    font-size: 15px;
+    padding: 10px 0;
+  }
+  #invitation .video {
+    position: relative;
+    height: 200px;
+    width: 300px;
+    max-width: 90%;
+  }
+  #invitation .video .play_btn {
+    height: 50px;
+    width: 50px;
   }
 }
 

@@ -25,8 +25,8 @@ x,
 index=0,
 time=5000;
 
-  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.9),
-  rgba(0, 0, 0, 0.9)),
+  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.6),
+  rgba(0, 0, 0, 0.7)),
      url(${images[index]})`
 
      images.forEach((image,i)=>{
@@ -49,8 +49,8 @@ slidePaginationBtn[index].classList.remove('active');
 // increament the image array
 	index++;
 
-	  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.9),
-    rgba(0, 0, 0, 0.9)),
+	  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.6),
+    rgba(0, 0, 0, 0.7)),
      url(${images[index]})`;
 
 
@@ -59,8 +59,8 @@ slidePaginationBtn[index].classList.remove('active');
      	index=0	
      }
     //  add new add image on increase of index +1
-	  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.9),
-    rgba(0, 0, 0, 0.9)),
+	  slider.style.backgroundImage=`linear-gradient(rgba(2, 2, 2, 0.6),
+    rgba(0, 0, 0, 0.7)),
      url(${images[index]})`;
 slidePaginationBtn[index].classList.add('active')
 }
@@ -79,15 +79,7 @@ hamburger.addEventListener('click',function(){
 
 // animation on scroll function
 function scroller() {
-  // bg_Smooth.style=50+'%'
-  // console.log(window.pageYOffset-window.innerHeight/100+'px')
-  // if( bg_Smooth.style.top =='0px'){
-  //     bg_Smooth.style.top=0.02+'px' 
-  // }
-  // if(bg_Smooth.style.top == '5px'){
-  //     bg_Smooth.style.top=0.024+'px' 
-
-  // }
+ 
   const elmn = document.querySelectorAll('.scroller');
   for (let i = 0; i < elmn.length; i++) {
       const elmnOffset = elmn[i].getBoundingClientRect().top;
@@ -105,9 +97,12 @@ function scroller() {
   }
 }
 
+function InitScroll(){
+  window.addEventListener('scroll',scroller)
+}
 
 // initiate animation on scroll 
-window.addEventListener('scroll',scroller)
+InitScroll()
 
 
 
